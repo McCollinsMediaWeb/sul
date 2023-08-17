@@ -6,17 +6,11 @@ const Header = () => {
   const { height, width } = useWindowDimensions();
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    // Add or remove the class from the body based on the 'open' state
     if (open) {
       document.body.classList.add("your-class-name");
     } else {
       document.body.classList.remove("your-class-name");
     }
-
-    // Clean up the effect
-    return () => {
-      document.body.classList.remove("your-class-name");
-    };
   }, [open]);
   return (
     <header>
