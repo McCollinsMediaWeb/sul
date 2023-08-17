@@ -434,3 +434,68 @@ display: inline-block;
   footer .socialItems .SocialItem:hover{
     background-color: #1D1D1B;
   }
+  .FooterBottom{
+    padding: 20px 0px;
+    background-color: #1D1D1B;
+    color: #fff;
+  }
+  .FooterBottom a , .FooterBottom span{
+    color: #EB6131;
+    margin-left: 5px;
+  }
+  .FoterBtmContent{
+    display: flex;
+    justify-content: space-between;
+  }
+  .ReserveTable .container{
+    max-width: 1100px;
+  }
+  .RserveHeader1{
+    font-size: 28px;
+    color: #EB6131;
+  }
+  .RserveHeader2{
+   color: #fff;
+  }
+.bg2{
+  backdrop-filter: blur(9px);
+background: #0000004f;
+}
+.RserveHeader{
+  padding: 15px 0px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 99;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ReserveFormBox{
+  padding: 20px;
+  background-color: #1D1D1B;
+}
+.form-control-1 input,
+.form-control-1 select{
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.form-control-1 ::placeholder {
+  color: #fff;
+  opacity: 1; 
+}
+
+.form-control-1 :-ms-input-placeholder { 
+ color: #fff;
+}
+
+.form-control-1 ::-ms-input-placeholder { 
+ color: #fff;
+}
+.ReserveFormBox .col-md-3{
+  margin-top: 20px;
+}
