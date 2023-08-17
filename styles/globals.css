@@ -252,8 +252,6 @@ margin: 0 auto;
     color: #fff;
   }
   .OverLay1{
-    width: 100%;
-    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
@@ -261,4 +259,178 @@ margin: 0 auto;
     background: #0000004f;
     z-index: 99;
     cursor: pointer;
+  }
+  .SideNav{
+    position: fixed;
+    background-color: #efefef;
+    right:0;
+    top:0;
+    z-index: 1000;
+    width: 650px;
+    border-top-left-radius: 120px;
+border-bottom-left-radius: 120px;
+padding: 40px;
+display: flex;
+align-items: center;
+
+  }
+  body.PanelActivated{
+    overflow: hidden;
+  }
+  .SideNavHeader{
+    padding: 25px;
+    color: #242424;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1;
+    position: relative;
+    padding-top: 0;
+  }
+  .CloseBtn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url(../public/icons/close.png);
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .SideNavMiddle{
+    padding: 0px 25px;
+  }
+  .SideNavMiddle a{
+    display: block;
+    color: #212121;
+    font-size: 25px;
+    line-height: 1;
+    padding: 8px 0px;
+    transition: 0.5s;
+    position: relative;
+  }
+  .hover1:hover{
+color: #EB6131;
+  }
+  .hover1:hover::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #EB6131;
+  }
+  .SideNavFooter{
+    padding: 25px;
+    color: #EB6131;
+    padding-bottom: 0;
+  }
+  .T3{
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  .T4{
+    margin-top: 10px;
+    color: #212121;
+    margin-bottom: 15px;
+  }
+  .HdrRow1{
+    margin: 0 -5px;
+  }
+  .HdrRow1 .col-md-4{
+    padding: 0 5px;
+  }
+  .SocialItem .Icon{
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    display: inline-block;
+  }
+  .SocialItem .Icon.instagram{
+    background-image: url(../public/icons/winstagram.png);
+  }
+  .SocialItem .Icon.facebook{
+    background-image: url(../public/icons/wfacebook.png);
+  }
+  .SocialItem .Icon.youtube{
+    background-image: url(../public/icons/wyoutube.png);
+  }
+  .SocialItem .Icon.whatsapp{
+    background-image: url(../public/icons/wwhatsapp.png);
+  }
+  .SocialItem .Icon.twitter{
+    background-image: url(../public/icons/wtwitter.png);
+  }
+
+  .socialItems{
+    display: flex;
+  }
+  .socialItems .SocialItem {
+    margin-right: 20px;
+    border: 2px solid #EB6131;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #EB6131;
+  }
+  .socialItems .SocialItem:hover{
+    background-color: #1d1d1b;
+  }
+  .ScrollPart{
+    overflow-y: scroll;
+    max-height: 100%;
+  }
+  
+  footer{
+    background-color: #EB6131;
+  }
+  .FtrT1{
+    font-size: 24px;
+margin-bottom: 25px;
+font-weight: 500;
+color: #fff;;
+  }
+  .FtrLink1{
+    color: #fff;
+font-style: italic;
+font-size: 17px;
+margin-bottom: 10px;
+display: block;
+transition: .5s;
+  }
+  .hover2:hover{
+    color: #1D1D1B;
+  }
+  .FooterDesc {
+    line-height: 1.3;
+    font-weight: 300;
+    color: #fff;
+  }
+  .SocialItem a{
+display: inline-block;
+  }
+  footer .SocialBoxWrp{
+    margin-top: 20px;
+  }
+
+  footer .SocialItem .Icon.instagram{
+    background-image: url(../public/icons/winstagram.png);
+  }
+  footer .SocialItem .Icon.facebook{
+    background-image: url(../public/icons/wfacebook.png);
+  }
+  footer .SocialItem .Icon.youtube{
+    background-image: url(../public/icons/wyoutube.png);
+  }
+  footer .SocialItem .Icon.whatsapp{
+    background-image: url(../public/icons/wwhatsapp.png);
+  }
+  footer .SocialItem .Icon.twitter{
+    background-image: url(../public/icons/wtwitter.png);
+  }
+  footer .socialItems .SocialItem {
+    border: 2px solid #fff;
+  }
+  footer .socialItems .SocialItem:hover{
+    background-color: #1D1D1B;
   }

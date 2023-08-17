@@ -7,9 +7,9 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (open) {
-      document.body.classList.add("your-class-name");
+      document.body.classList.add("PanelActivated");
     } else {
-      document.body.classList.remove("your-class-name");
+      document.body.classList.remove("PanelActivated");
     }
   }, [open]);
   return (
@@ -71,6 +71,105 @@ const Header = () => {
               onClick={() => setOpen(false)}
             >
               &nbsp;
+            </div>
+            <div className="SideNav" style={{ height: height + "px" }}>
+              <div className="ScrollPart">
+                <div className="SideNavHeader">
+                  Sul Menu{" "}
+                  <span className="CloseBtn" onClick={() => setOpen(false)}>
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="SideNavMiddle">
+                  <div className="SideNavLinks">
+                    <Link href={"/"} className="hover1">
+                      About Us
+                    </Link>
+                    <Link href={"/"} className="hover1">
+                      Menu
+                    </Link>
+                    <Link href={"/"} className="hover1">
+                      Gallery
+                    </Link>
+                    <Link href={"/"} className="hover1">
+                      Reservations
+                    </Link>
+                    <Link href={"/"} className="hover1">
+                      Contact Us
+                    </Link>
+                  </div>
+                </div>
+                <div className="SideNavFooter">
+                  
+                  <div className="T3">Connect With us</div>
+                  <div className="row HdrRow1">
+                    <div className="col-md-4">
+                      <Image
+                        src="/hero1.jpg"
+                        layout="responsive"
+                        width={"1440"}
+                        height={"900"}
+                        priority={true}
+                        className=""
+                      />
+                    </div>
+                    <div className="col-md-4">
+                      <Image
+                        src="/hero1.jpg"
+                        layout="responsive"
+                        width={"1440"}
+                        height={"900"}
+                        priority={true}
+                        className=""
+                      />
+                    </div>
+                    <div className="col-md-4">
+                      <Image
+                        src="/hero1.jpg"
+                        layout="responsive"
+                        width={"1440"}
+                        height={"900"}
+                        priority={true}
+                        className=""
+                      />
+                    </div>
+                  </div>
+                  <div className="T4">
+                    Taking care of the planet is a core Sul Principle. Our
+                    packaging is eco-friendly, our herbs are homegrown, and our
+                    commitment is lasting.
+                  </div>
+                  <div className="SocialBoxWrp">
+                    <div className="socialItems">
+                      <div className="SocialItem">
+                        <a href="#" target="_blank">
+                          <span className="Icon instagram">&nbsp;</span>
+                        </a>
+                      </div>
+                      <div className="SocialItem">
+                        <a href="#" target="_blank">
+                          <span className="Icon facebook">&nbsp;</span>
+                        </a>
+                      </div>
+                      <div className="SocialItem">
+                        <a href="#" target="_blank">
+                          <span className="Icon twitter">&nbsp;</span>
+                        </a>
+                      </div>
+                      <div className="SocialItem">
+                        <a href="#" target="_blank">
+                          <span className="Icon youtube">&nbsp;</span>
+                        </a>
+                      </div>
+                      <div className="SocialItem">
+                        <a href="#" target="_blank">
+                          <span className="Icon whatsapp">&nbsp;</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
