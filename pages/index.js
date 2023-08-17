@@ -6,11 +6,10 @@ import ReservTable from "@/Components/Home-components/Reserve-table/ReserveTable
 const index = () => {
   return (
     <div>
-      <Header/>
-      <HeroBanner/>
-      <ReservTable/>
-      <Footer/>
-
+      <Header />
+      <HeroBanner />
+      <ReservTable />
+      <Footer />
     </div>
   );
 };
