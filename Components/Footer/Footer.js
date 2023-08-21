@@ -35,9 +35,6 @@ const Footer = () => {
                     <Link href={"/"} className="FtrLink1 hover2">
                       Who we are
                     </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      Terms & Conditions
-                    </Link>
                   </div>
                   <div className="col-md-6">
                     <Link href={"/"} className="FtrLink1 hover2">
@@ -45,9 +42,6 @@ const Footer = () => {
                     </Link>
                     <Link href={"/"} className="FtrLink1 hover2">
                       Customers Reviews
-                    </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      FAQ
                     </Link>
                     <Link href={"/"} className="FtrLink1 hover2">
                       Contact Us

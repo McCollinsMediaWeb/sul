@@ -1,16 +1,25 @@
 import "@/styles/bootsrap.css";
 import "@/styles/globals.css";
+import "../styles/slick-slider/slick/slick.css";
+import "../styles/slick-slider/slick/slick-theme.css";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Head from "next/head";
-
-{
-  /* <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link> */
-}
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY > 100;
+      if (scrollCheck) {
+        document.getElementsByTagName("body")[0].classList.add("StickyHeader");
+      } else {
+        document
+          .getElementsByTagName("body")[0]
+          .classList.remove("StickyHeader");
+      }
+    });
+  });
   return (
     <div>
       <Head>
