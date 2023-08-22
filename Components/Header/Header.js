@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
-import { motion } from "framer-motion";
+
 import { useRouter } from "next/router";
 const Header = () => {
   const router = useRouter();
@@ -54,19 +54,40 @@ const Header = () => {
             </div>
             <div className="MainHeadrM">
               <div className="HeaderLinks">
-                <Link href={"/about"} className={router.pathname == "/about" ? "active" : ""}>
+                <Link
+                  href={"/about"}
+                  className={router.pathname == "/about" ? "active" : ""}
+                >
                   About Us
                 </Link>
-                <Link href={"/menu"} className={router.pathname == "/menu" ? "active" : ""}>
+                <Link
+                  href={"/menu"}
+                  className={router.pathname == "/menu" ? "active" : ""}
+                >
                   Menu
                 </Link>
-                <Link href={"/gallery"} className={router.pathname == "/gallery" ? "active" : ""}>
+                <Link
+                  href={"/gallery"}
+                  className={router.pathname == "/gallery" ? "active" : ""}
+                >
                   Gallery
                 </Link>
-                <Link href={"/reservation"} className={router.pathname == "/reservation" ? "active" : ""}>
+                <Link
+                  href={"/reviews"}
+                  className={router.pathname == "/reviews" ? "active" : ""}
+                >
+                  Reviews
+                </Link>
+                <Link
+                  href={"/reservation"}
+                  className={router.pathname == "/reservation" ? "active" : ""}
+                >
                   Reservations
                 </Link>
-                <Link href={"/contact"} className={router.pathname == "/contact" ? "active" : ""}>
+                <Link
+                  href={"/contact"}
+                  className={router.pathname == "/contact" ? "active" : ""}
+                >
                   Contact Us
                 </Link>
               </div>
@@ -103,7 +124,7 @@ const Header = () => {
               &nbsp;
             </div>
             <div className="SideNav" style={{ height: height + "px" }}>
-              <motion.div
+              <div
                 className="SliderWrt1"
                 {...animation}
                 viewport={{ once: true }}
@@ -117,21 +138,38 @@ const Header = () => {
                   </div>
                   <div className="SideNavMiddle">
                     <div className="SideNavLinks">
-                      <Link href={"/"} className="hover1">
-                        About Us
-                      </Link>
-                      <Link href={"/"} className="hover1">
-                        Menu
-                      </Link>
-                      <Link href={"/"} className="hover1">
-                        Gallery
-                      </Link>
-                      <Link href={"/"} className="hover1">
-                        Reservations
-                      </Link>
-                      <Link href={"/"} className="hover1">
-                        Contact Us
-                      </Link>
+                      <div onClick={() => setOpen(false)}>
+                        <Link href={"/about"} className="hover1">
+                          About Us
+                        </Link>
+                      </div>
+                      <div onClick={() => setOpen(false)}>
+                        {" "}
+                        <Link href={"/menu"} className="hover1">
+                          Menu
+                        </Link>
+                      </div>
+                      <div onClick={() => setOpen(false)}>
+                        {" "}
+                        <Link href={"/gallery"} className="hover1">
+                          Gallery
+                        </Link>
+                      </div>
+                      <div onClick={() => setOpen(false)}>
+                        <Link href={"/reviews"} className="hover1">
+                          Reviews
+                        </Link>
+                      </div>
+                      <div onClick={() => setOpen(false)}>
+                        <Link href={"/reservation"} className="hover1">
+                          Reservations
+                        </Link>
+                      </div>
+                      <div onClick={() => setOpen(false)}>
+                        <Link href={"/contact"} className="hover1">
+                          Contact Us
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   <div className="SideNavFooter">
@@ -204,7 +242,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,7 +42,7 @@ const HomeMenu = () => {
     <div className="pd-common bg1 HomeMenuBox position-relative">
       <div>
         <div className="container slider1">
-          <motion.div
+          <div
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
             transition={{
@@ -64,7 +64,7 @@ const HomeMenu = () => {
             <div className="ProductCWrap1">
               <Slider {...settings}>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -100,10 +100,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -139,10 +139,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -178,10 +178,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -217,10 +217,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -256,10 +256,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -295,10 +295,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -334,10 +334,10 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true }}
@@ -373,12 +373,12 @@ const HomeMenu = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               </Slider>
-              <a class="T7" href="/">Explore More</a>
+              <a class="T7" href="/menu">Explore More</a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

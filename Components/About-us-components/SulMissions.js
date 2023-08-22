@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HomeChef = () => {
+const SulMissions = () => {
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -20,10 +20,10 @@ const HomeChef = () => {
   };
   return (
     <>
-      <div className="bg1 HomeChefBox">
+      <div className="bg1 pd-common">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+          <div className="col-md-6">
               <div
                 className="image-container"
                 initial={{ rotate: 5, scale: 0.9 }}
@@ -35,35 +35,40 @@ const HomeChef = () => {
                 }}
               >
                 <Image
-                  src="/chef.jpg"
+                  src="/homeabout.jpg"
                   layout="responsive"
-                  width={"429"}
-                  height={"662"}
+                  width={"577"}
+                  height={"316"}
                   className="HomeAbtImage"
                 />
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-6">
               <div
                 className="SliderWrt1"
                 {...animation}
                 viewport={{ once: true }}
               >
-                <div className="T8">
-                  <span className="L1 color-fff text-uppercase">Our</span>
-                  <div className="L2 color-fff">Chef</div>
+                <div className="T5 text-uppercase text-center">
+                  <span>Our Mission</span>
                 </div>
-                <div className="T10 color-fff">MILTON BRYANT </div>
-                <div className="T9 color-fff">
+                <div className="T6 color-fff">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incidition ullamco laboris nisi ut aliquip
                   ex ea commodo condor consectetur adipiscing elit, sed do
                   eiusmod tempor incidition ullam. tempor incidition ullamco
-                  laboris nisi ut aliquip ex ea commodo condor consectetur
-                  adipiscing elit
+                  laboris nisi ut aliquip ex ea commodo condor
+                </div>
+                <div className="T6 color-fff">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
+                  ex ea commodo condor consectetur adipiscing elit, sed do
+                  eiusmod tempor incidition ullam. tempor incidition ullamco
+                  laboris nisi ut aliquip ex ea commodo condor
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -71,4 +76,4 @@ const HomeChef = () => {
   );
 };
 
-export default HomeChef;
+export default SulMissions;

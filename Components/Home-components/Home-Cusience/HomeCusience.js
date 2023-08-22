@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,6 +26,7 @@ const HomeCusience = () => {
     slidesToShow: 2,
     slidesToScroll: 2,
     centerMode: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 786,
@@ -42,7 +43,7 @@ const HomeCusience = () => {
   return (
     <div className="pd-common bg1 cusienBox">
       <div className="container">
-        <motion.div
+        <div
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           viewport={{ once: true}}
@@ -64,9 +65,9 @@ const HomeCusience = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
         <div className="slider2">
-          <motion.div
+          <div
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true}}
@@ -75,7 +76,7 @@ const HomeCusience = () => {
             <div className="ProductCWrap1">
               <Slider {...settings}>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -108,10 +109,10 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -144,10 +145,10 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -180,10 +181,10 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -216,10 +217,10 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -252,10 +253,10 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="SliderItem1">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -288,11 +289,11 @@ const HomeCusience = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               </Slider>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

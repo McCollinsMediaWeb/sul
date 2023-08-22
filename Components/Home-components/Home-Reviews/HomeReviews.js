@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +43,7 @@ const HomeReviews = () => {
       <div className="container">
         
           <div className="ReviewBoxHdr">
-          <motion.div
+          <div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{
@@ -76,10 +76,10 @@ const HomeReviews = () => {
                 </div>
               </div>
             </div>
-            </motion.div>
+            </div>
           </div>
         
-        <motion.div
+        <div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{
@@ -90,7 +90,7 @@ const HomeReviews = () => {
         >
           <div className="ReviewsWrap position-relative">
             <div className="slider2">
-              <motion.div
+              <div
                 initial={{ x: -100 }}
                 whileInView={{ x: 0 }}
                 viewport={{ once: true }}
@@ -99,7 +99,7 @@ const HomeReviews = () => {
                 <div className="ProductCWrap1">
                   <Slider {...settings}>
                     <div className="ReviewItemBox">
-                      <motion.div
+                      <div
                         className="SliderWrt1"
                         {...animation}
                         viewport={{ once: true }}
@@ -123,10 +123,10 @@ const HomeReviews = () => {
                             </div>
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                     <div className="ReviewItemBox">
-                      <motion.div
+                      <div
                         className="SliderWrt1"
                         {...animation}
                         viewport={{ once: true }}
@@ -150,10 +150,10 @@ const HomeReviews = () => {
                             </div>
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                     <div className="ReviewItemBox">
-                      <motion.div
+                      <div
                         className="SliderWrt1"
                         {...animation}
                         viewport={{ once: true }}
@@ -177,10 +177,10 @@ const HomeReviews = () => {
                             </div>
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                     <div className="ReviewItemBox">
-                      <motion.div
+                      <div
                         className="SliderWrt1"
                         {...animation}
                         viewport={{ once: true }}
@@ -204,10 +204,10 @@ const HomeReviews = () => {
                             </div>
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                     <div className="ReviewItemBox">
-                      <motion.div
+                      <div
                         className="SliderWrt1"
                         {...animation}
                         viewport={{ once: true }}
@@ -231,14 +231,14 @@ const HomeReviews = () => {
                             </div>
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
                   </Slider>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

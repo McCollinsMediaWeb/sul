@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 const HomePromotions = () => {
   const animation = {
     variants: {
@@ -31,7 +31,7 @@ const HomePromotions = () => {
 
         <div className="PrBlock1C">
           <div className="container">
-            <motion.div
+            <div
               initial={{ x: -100 }}
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
@@ -44,7 +44,7 @@ const HomePromotions = () => {
               <a class="T7" href="/">
                 Reserve Now
               </a>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

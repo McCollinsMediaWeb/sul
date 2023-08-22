@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+
 import Slider from "react-slick";
 
 const InstagramComponent = () => {
@@ -42,7 +42,7 @@ const InstagramComponent = () => {
   return <div className="pd-common bg-2 instagramBox">
     <div className="container">
         <div className="InstaHead">
-        <motion.div
+        <div
               className="SliderWrt1"
               {...animation}
               viewport={{ once: true }}
@@ -62,11 +62,11 @@ const InstagramComponent = () => {
                     </div>
                 </div>
             </div>
-            </motion.div>
+            </div>
         </div>
         <div className="InstaSliderBox">
         <div className="slider2">
-          <motion.div
+          <div
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true}}
@@ -75,7 +75,7 @@ const InstagramComponent = () => {
             <div className="ProductCWrap1">
               <Slider {...settings}>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -88,10 +88,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -104,10 +104,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -120,10 +120,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -136,10 +136,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -152,10 +152,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -168,10 +168,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -184,10 +184,10 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
-                  <motion.div
+                  <div
                     className="SliderWrt1"
                     {...animation}
                     viewport={{ once: true}}
@@ -200,11 +200,11 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
-                  </motion.div>
+                  </div>
                 </div>
               </Slider>
             </div>
-          </motion.div>
+          </div>
         </div>
         </div>
     </div>

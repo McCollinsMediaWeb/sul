@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HomeAbout = () => {
+const AboutSul = () => {
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ const HomeAbout = () => {
                 viewport={{ once: true }}
               >
                 <div className="T5 text-uppercase text-center">
-                  <span>About US</span>
+                  <span>Who We are</span>
                 </div>
                 <div className="T6 color-fff">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -39,9 +39,13 @@ const HomeAbout = () => {
                   eiusmod tempor incidition ullam. tempor incidition ullamco
                   laboris nisi ut aliquip ex ea commodo condor
                 </div>
-                <Link href={"/about"} className="T7">
-                  About Us
-                </Link>
+                <div className="T6 color-fff">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
+                  ex ea commodo condor consectetur adipiscing elit, sed do
+                  eiusmod tempor incidition ullam. tempor incidition ullamco
+                  laboris nisi ut aliquip ex ea commodo condor
+                </div>
               </div>
             </div>
             <div className="col-md-6">
@@ -71,4 +75,4 @@ const HomeAbout = () => {
   );
 };
 
-export default HomeAbout;
+export default AboutSul;

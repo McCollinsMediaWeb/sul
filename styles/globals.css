@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none !important;
+  outline: none !important;
 }
 
 .bg1 {
@@ -1094,7 +1095,7 @@ content: none;
   width: 75px;
 }
 .slider2 .slick-dots li.slick-active button{
-  background-color: #1D1D1B;
+  background-color: #EB6131;
 }
 .slider2 .slick-dots{
   bottom: -35px;
@@ -1276,7 +1277,7 @@ line-height: 1;
   z-index: 0;
 }
 .bg-2{
-  background-color: #000;
+  background-color: #1D1D1B;
 }
 .InstraaLftBox {
   display: flex;
@@ -1315,4 +1316,95 @@ line-height: 1;
 }
 .InstaHead{
   margin-bottom: 40px;
+}
+.GalleryBox .slider2 .slick-dots{
+  display: none !important;
+}
+
+.GalleryBox .PromotionalBlock ,
+.GalleryBox .PromotionalBlock img{
+  border-radius: 10px;
+  cursor: pointer;
+}
+.GalleryBox .PromotionalBlock::after{
+  content: none;
+}
+.MenuGridRow{
+  margin: 0 -10px;
+}
+.MenuGridRow .col-md-3{
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.MenuGridRow .col-md-3 .SliderWrt1 {
+  padding: 0;
+}
+.MenuBg1{
+  background-color: #EB6131;
+}
+.GalleryMenuBg2{
+  background-color: #1D1D1B;
+}
+.GalleryMenuBg2 .RvHeading,
+.GalleryMenuBg2 .RT1{
+color: #fff;
+}
+.MenuBg2{
+  background-color: #1D1D1B;
+}
+.MenuBg2 .Header1Txt:after{
+  background-image: url(../public/reviewheading.png);
+}
+.MenuBg2 .HomeMenuBox .container::after{
+  background-image: url(../public/menubg1.png);
+}
+.GalleryItem1{
+  height: 150px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.GalleryItemName{
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.GalleryBox .ReviewItemBoxItem{
+cursor: pointer;
+}
+.GalleryImages{
+  margin-top: 50px;
+}
+.GalleryImages .row{
+  margin: 0 -10px;
+}
+.GalleryImages .row .col-md-3{
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.GalleryImages .SliderWrt1 {
+  padding: 0;
+  cursor: pointer;
+}
+.PdArg1{
+  padding-bottom: 40px;
+}
+.loadingMainDiv{
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.LoadingContent{
+  max-width: 300px;
+  text-align: center;
 }

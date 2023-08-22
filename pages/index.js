@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "@/Components/Header/Header";
-import Footer from "@/Components/Footer/Footer";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
 import ReservTable from "@/Components/Home-components/Reserve-table/ReserveTable";
 import HomeAbout from "@/Components/Home-components/Home-about/HomeAbout";
@@ -13,8 +11,7 @@ import InstagramComponent from "@/Components/Home-components/Instagram/Instagram
 const index = () => {
   return (
     <div>
-      <Header />
-      <HeroBanner />
+      <HeroBanner title="Savor Authenic Middle Eastern Cuisine"/>
       <ReservTable />
       <HomeAbout/>
       <HomeChef/>
@@ -23,7 +20,6 @@ const index = () => {
       <HomePromotions/>
       <HomeReviews/>
       <InstagramComponent/>
-      <Footer />
     </div>
   );
 };

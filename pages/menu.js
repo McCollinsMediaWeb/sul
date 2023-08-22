@@ -1,26 +1,22 @@
-import React from "react";
 
+
+import React from "react";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
-import HomeMenu from "@/Components/Home-components/Home-menu/HomeMenu";
 import HomeCusience from "@/Components/Home-components/Home-Cusience/HomeCusience";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
 import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
-import AboutSul from "@/Components/About-us-components/AboutSul";
-import SulMissions from "@/Components/About-us-components/SulMissions";
-import SulVisions from "@/Components/About-us-components/SulVisions";
 import AboutGallery from "@/Components/About-us-components/AboutGallery";
+import MenuItemRow from "@/Components/Menu-Components/MenuItemRow";
 const about = () => {
   return (
     <div>
-     
-      <HeroBanner  title="Who We Are "/>
-      <AboutSul/>
-      <AboutGallery/>
-      <SulMissions/>
-      <AboutGallery/>
-      <SulVisions/>
-      <HomeMenu/>
-      <HomeCusience/>
+      <HeroBanner title="Discover Our Menu" />
+      <MenuItemRow itemname="Our Salads" bgColor="MenuBg1"/>
+      <MenuItemRow itemname="Our Starters" bgColor=""/>
+      <MenuItemRow itemname="Our Sides" bgColor="MenuBg1"/>
+      <MenuItemRow itemname="Our Main Course" bgColor=""/>
+      <MenuItemRow itemname="Our Melt In Mouth" bgColor="MenuBg1"/>
+      <MenuItemRow itemname="Our Desserts" bgColor=""/>
       <HomeReviews/>
       <InstagramComponent/>
     </div>

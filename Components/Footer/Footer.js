@@ -23,28 +23,28 @@ const Footer = () => {
               <div className="FtLinkBox">
                 <div className="row">
                   <div className="col-md-6">
-                    <Link href={"/"} className="FtrLink1 hover2">
+                    <Link href={"/about"} className="FtrLink1 hover2">
                       About Us
                     </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
+                    <Link href={"/menu"} className="FtrLink1 hover2">
                       Menu
                     </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      Offers
+                    <Link href={"/gallery"} className="FtrLink1 hover2">
+                      Gallery
                     </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      Who we are
+                    <Link href={"/reservation"} className="FtrLink1 hover2">
+                      Reservations
                     </Link>
                   </div>
                   <div className="col-md-6">
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      Privacy Policy
-                    </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
-                      Customers Reviews
-                    </Link>
-                    <Link href={"/"} className="FtrLink1 hover2">
+                    <Link href={"/contact"} className="FtrLink1 hover2">
                       Contact Us
+                    </Link>
+                    <a href="#" className="FtrLink1 hover2">
+                      Order Now
+                    </a>
+                    <Link href={"/reviews"} className="FtrLink1 hover2">
+                      Customer Reviews
                     </Link>
                     <Link href={"/"} className="FtrLink1 hover2">
                       Gallery

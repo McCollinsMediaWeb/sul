@@ -9,8 +9,8 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Video from "yet-another-react-lightbox/plugins/video";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import { motion } from "framer-motion";
-const HeroBanner = () => {
+
+const HeroBanner = (props) => {
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -54,16 +54,15 @@ const HeroBanner = () => {
       <div className="Layer1">
         <div className="fullWidth">
           <div className="container text-center">
-            <motion.div
+            <div
               className="SliderWrt1"
               {...animation}
               viewport={{ once: true }}
             >
               <div className="BannerContent">
-                <div className="T1">Savor Authenic Middle Eastern Cuisine </div>
+                <div className="T1">{props.title} </div>
                 <div className="T2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et
+                With a menu that can be as authentically Middle East as it can be, we have a menu comprising of delicious main courses, flavorful desserts, and refreshing beverages. 
                 </div>
                 <div>
                   <div className="BannerBtnWrp">
@@ -159,7 +158,7 @@ const HeroBanner = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

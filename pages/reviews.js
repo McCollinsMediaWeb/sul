@@ -1,19 +1,23 @@
 
-
 import React from "react";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
+import HomeMenu from "@/Components/Home-components/Home-menu/HomeMenu";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
 import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
-const contact = () => {
+
+const Reviews = () => {
   return (
-    <div>
-      <HeroBanner title="Contact Us For Your Questions"/>
+    <>
+      <div>
+      <HeroBanner  title="Explore Our Customer Reviews"/>
       <HomeReviews/>
+      <HomeMenu/>
+      
       <InstagramComponent/>
-    </div>
+      </div>
+     
+    </>
   );
 };
 
-export default contact;
-
-
+export default Reviews;
