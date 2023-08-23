@@ -3,7 +3,6 @@
 import React from "react";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
-import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
 import ContactRow1 from "@/Components/Contact-Components/ContactRow1";
 import ContactRow2 from "@/Components/Contact-Components/ContactRow2";
 import MapBox from "@/Components/Contact-Components/MapBox";
@@ -16,7 +15,6 @@ const contact = () => {
       <ContactRow2/>
       <MapBox/>
       <HomeReviews/>
-      <InstagramComponent/>
     </div>
   );
 };

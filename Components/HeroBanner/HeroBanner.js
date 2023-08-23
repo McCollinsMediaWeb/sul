@@ -74,9 +74,9 @@ const HeroBanner = (props) => {
                       >
                         Play Now
                       </a>
-                      <a href="#" className="BannerBtn2">
-                        View Menu
-                      </a>
+                      <Link href={"/"} className="BannerBtn2">
+                        Reserve Now
+                      </Link>
                       <Lightbox
                         open={open}
                         close={() => setOpen(false)}
