@@ -1538,3 +1538,11 @@ color:#EB6131;
     min-width: 240px;
     margin-top: 20px;
   }
+
+  .ReserveFormBox  .row{
+    margin: 0 -10px;
+  }
+  .ReserveFormBox .col-md-4 , 
+  .ReserveFormBox .col-md-3{
+    padding: 0 10px;
+  }
