@@ -1546,3 +1546,18 @@ color:#EB6131;
   .ReserveFormBox .col-md-3{
     padding: 0 10px;
   }
+
+  @media only screen and (max-width: 1500px) {
+    .LogoFix {
+      width: 200px;
+    }
+    .HeaderLinks a{
+      padding: 6px 8px;
+      margin-right: 5px;
+font-size: 14px;
+    }
+    .ThumbBoxL a{
+      margin-right: 20px;
+      font-size: 14px;
+    }
+  }
