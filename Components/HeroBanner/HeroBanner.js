@@ -9,7 +9,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Video from "yet-another-react-lightbox/plugins/video";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-
+import { useRouter } from "next/router";
 const HeroBanner = (props) => {
   const animation = {
     variants: {
@@ -28,6 +28,20 @@ const HeroBanner = (props) => {
   };
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [open, setOpen] = useState(false);
+  const [booknowUrl, setBooknowUrl] = useState(
+    "/reservation"
+  );
+  const [bookNowName, setbookNowName] = useState("Reserve Now");
+  const router = useRouter();
+  useEffect(() => {
+    if (router.pathname === "/reservation") {
+      setBooknowUrl(
+        "/about"
+      );
+      setbookNowName("About Us");
+      return;
+    }
+  }, [router.pathname]);
   return (
     <div className="HeroBannerWrp">
       {isDesktop && (
@@ -74,8 +88,9 @@ const HeroBanner = (props) => {
                       >
                         Play Now
                       </a>
-                      <Link href={"/"} className="BannerBtn2">
-                        Reserve Now
+                      
+                      <Link href={booknowUrl} className="BannerBtn2">
+                        {bookNowName}
                       </Link>
                       <Lightbox
                         open={open}
