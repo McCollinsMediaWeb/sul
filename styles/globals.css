@@ -1225,14 +1225,14 @@ line-height: 1;
 }
 .Rname{
   color: #EB6131;
-  font-weight: 500;
-  font-size: 19px;
+  font-weight: 400;
+  font-size: 18px;
   margin-bottom: 10px;
   line-height: 1;
 }
 .RLocation{
-  font-weight: 500;
-  font-size: 19px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1;
 }
 .ReviewAddress{
@@ -1490,3 +1490,51 @@ margin-bottom: 60px;
   height: 100%;
   overflow: hidden;
 }
+.ContactRow2{
+  background-color: #1D1D1B;
+}
+.ContactRow2 .Ct11{
+color:#EB6131;
+}
+.ContactRow2 .Ct22{
+  color:#fff;
+  }
+  .contactFormR1{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .contactFormR1 textarea{
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 10px;
+  }
+
+  .contactFormR1 ::placeholder {
+    color: #fff;
+    opacity: 1; 
+  }
+  
+  .contactFormR1 :-ms-input-placeholder { 
+   color: #fff;
+  }
+  
+  .contactFormR1 ::-ms-input-placeholder { 
+   color: #fff;
+  }
+  .contactFormR1 .row{
+    margin: 0 -10px;
+  }
+  .contactFormR1 .row .col-md-12 , 
+  .contactFormR1 .row .col-md-6{
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .contactFormR1 .T7{
+    margin: 0 auto;
+    min-width: 240px;
+    margin-top: 20px;
+  }
