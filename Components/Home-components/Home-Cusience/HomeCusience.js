@@ -101,7 +101,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                  Order Now
                                 </Link>
                               </div>
                             </div>
@@ -137,7 +137,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                Order Now
                                 </Link>
                               </div>
                             </div>
@@ -173,7 +173,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                Order Now
                                 </Link>
                               </div>
                             </div>
@@ -209,7 +209,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                Order Now
                                 </Link>
                               </div>
                             </div>
@@ -245,7 +245,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                Order Now
                                 </Link>
                               </div>
                             </div>
@@ -281,7 +281,7 @@ const HomeCusience = () => {
                                 </div>
                                 <div className="PTxt3 color-fff">25% OFF</div>
                                 <Link href={"/"} className="AddToCartAction1">
-                                  View All
+                                Order Now
                                 </Link>
                               </div>
                             </div>
