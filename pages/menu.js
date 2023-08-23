@@ -2,10 +2,8 @@
 
 import React from "react";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
-import HomeCusience from "@/Components/Home-components/Home-Cusience/HomeCusience";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
 import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
-import AboutGallery from "@/Components/About-us-components/AboutGallery";
 import MenuItemRow from "@/Components/Menu-Components/MenuItemRow";
 const about = () => {
   return (

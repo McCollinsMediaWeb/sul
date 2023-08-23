@@ -20,7 +20,7 @@ const SulVisions = () => {
   };
   return (
     <>
-      <div className="bg1 pd-common pb-0">
+      <div className="bg1 pd-common ">
         <div className="container">
           <div className="row">
           <div className="col-md-6">

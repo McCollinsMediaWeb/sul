@@ -20,7 +20,7 @@ const SulMissions = () => {
   };
   return (
     <>
-      <div className="bg1 pd-common">
+      <div className="bg1">
         <div className="container">
           <div className="row">
           <div className="col-md-6">

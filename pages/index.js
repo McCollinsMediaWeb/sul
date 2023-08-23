@@ -1,6 +1,5 @@
 import React from "react";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
-import ReservTable from "@/Components/Home-components/Reserve-table/ReserveTable";
 import HomeAbout from "@/Components/Home-components/Home-about/HomeAbout";
 import HomeChef from "@/Components/Home-components/HomeChef/HomeChef";
 import HomeMenu from "@/Components/Home-components/Home-menu/HomeMenu";

@@ -530,6 +530,9 @@ footer .socialItems .SocialItem:hover {
 .ReserveTable .container {
   max-width: 1050px;
 }
+.ReserveTable{
+  padding-bottom: 60px;
+}
 
 .RserveHeader1 {
   font-size: 28px;
@@ -1681,7 +1684,9 @@ footer .socialItems .SocialItem:hover {
 .ReserveFormBox .col-md-3 {
   padding: 0 10px;
 }
-
+.MuiFormControl-root{
+  width: 100% !important;
+}
 @media only screen and (max-width: 1500px) {
   .LogoFix {
     width: 200px;

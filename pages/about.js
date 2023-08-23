@@ -2,7 +2,6 @@ import React from "react";
 
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
 import HomeMenu from "@/Components/Home-components/Home-menu/HomeMenu";
-import HomeCusience from "@/Components/Home-components/Home-Cusience/HomeCusience";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
 import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
 import AboutSul from "@/Components/About-us-components/AboutSul";
@@ -15,12 +14,12 @@ const about = () => {
      
       <HeroBanner  title="Who We Are "/>
       <AboutSul/>
-      <AboutGallery/>
+      
       <SulMissions/>
-      <AboutGallery/>
+     
       <SulVisions/>
+      <AboutGallery/>
       <HomeMenu/>
-      <HomeCusience/>
       <HomeReviews/>
       <InstagramComponent/>
     </div>
