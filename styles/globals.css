@@ -1,7 +1,9 @@
 .pd-common {
   padding: 70px 0px;
 }
-
+body{
+  overflow-x: hidden;
+}
 a {
   text-decoration: none !important;
   outline: none !important;
@@ -1686,6 +1688,9 @@ footer .socialItems .SocialItem:hover {
 }
 .MuiFormControl-root{
   width: 100% !important;
+}
+.cusienBox .slick-track{
+  height: 320px;
 }
 @media only screen and (max-width: 1500px) {
   .LogoFix {
