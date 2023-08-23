@@ -26,7 +26,7 @@ const HomeCusience = () => {
     slidesToShow: 2,
     slidesToScroll: 2,
     centerMode: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     responsive: [
       {
         breakpoint: 786,
