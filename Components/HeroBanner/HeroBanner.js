@@ -42,9 +42,9 @@ const HeroBanner = (props) => {
       )}
       {!isDesktop && (
         <Image
-          src="/hero1.jpg"
+          src="/hero1mobile.jpg"
           layout="responsive"
-          width={"1440"}
+          width={"612"}
           height={"900"}
           priority={true}
           className="MainBanner"

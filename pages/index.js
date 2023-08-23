@@ -12,7 +12,7 @@ const index = () => {
   return (
     <div>
       <HeroBanner title="Savor Authenic Middle Eastern Cuisine"/>
-      <ReservTable />
+     
       <HomeAbout/>
       <HomeChef/>
       <HomeMenu/>

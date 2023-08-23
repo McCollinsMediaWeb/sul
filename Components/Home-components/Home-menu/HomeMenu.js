@@ -376,7 +376,7 @@ const HomeMenu = () => {
                   </div>
                 </div>
               </Slider>
-              <a class="T7" href="/menu">Explore More</a>
+              <Link class="T7" href={"/menu"}>Explore More</Link>
             </div>
           </div>
         </div>

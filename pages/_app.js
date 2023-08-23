@@ -152,6 +152,7 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Header />
