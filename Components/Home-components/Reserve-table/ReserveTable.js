@@ -41,7 +41,7 @@ const ReservTable = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="form-control-1">
-                <TextField label="Name" fullWidth size="small" sx={{
+                <TextField label="Name" fullWidth size="small" borderColor="#ffffff" sx={{
                     svg: { color },
                     input: { color },
                     label: { color },

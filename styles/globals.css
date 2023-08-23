@@ -587,9 +587,7 @@ footer .socialItems .SocialItem:hover {
   margin-top: 20px;
 }
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: #fff !important;
-}
+
 
 .MuiInputBase-root {
   border-radius: 10px !important;
@@ -1407,4 +1405,7 @@ cursor: pointer;
 .LoadingContent{
   max-width: 300px;
   text-align: center;
+}
+.MuiOutlinedInput-notchedOutline{
+  border-color: #fff !important;
 }
