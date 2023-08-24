@@ -9,8 +9,11 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Video from "yet-another-react-lightbox/plugins/video";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { useRouter } from "next/router";
+
 const HeroBanner = (props) => {
+  const { height, width } = useWindowDimensions();
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -43,7 +46,7 @@ const HeroBanner = (props) => {
     }
   }, [router.pathname]);
   return (
-    <div className="HeroBannerWrp">
+    <div className="HeroBannerWrp" style={{ width: width + "px", height: height + "px" }}>
       {isDesktop && (
         <Image
           src="/hero1.jpg"
@@ -52,6 +55,7 @@ const HeroBanner = (props) => {
           height={"900"}
           priority={true}
           className="MainBanner"
+          
         />
       )}
       {!isDesktop && (
