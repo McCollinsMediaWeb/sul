@@ -1867,6 +1867,7 @@ footer .socialItems .SocialItem:hover {
     padding: 20px;
     display: flex;
     align-items: start;
+    border-bottom-left-radius: 0px;
   }
   .SideNavHeader{
     padding: 10px;
@@ -1906,6 +1907,6 @@ footer .socialItems .SocialItem:hover {
     padding: 7px;
   }
   .MainBanner{
-    min-height: 100vh;
+    max-height: 150vh;
   }
 }
