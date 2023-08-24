@@ -148,35 +148,40 @@ const Header = () => {
                   </div>
                   <div className="SideNavMiddle">
                     <div className="SideNavLinks">
+                    <div onClick={() => setOpen(false)}>
+                        <Link href={"/"} className={router.pathname == "/" ? "hover1 active" : "hover1"}>
+                          Home
+                        </Link>
+                      </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/about"} className="hover1">
+                        <Link href={"/about"} className={router.pathname == "/about" ? "hover1 active" : "hover1"}>
                           About Us
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
                         {" "}
-                        <Link href={"/menu"} className="hover1">
+                        <Link href={"/menu"}  className={router.pathname == "/menu" ? "hover1 active" : "hover1"}>
                           Menu
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
                         {" "}
-                        <Link href={"/gallery"} className="hover1">
+                        <Link href={"/gallery"}  className={router.pathname == "/gallery" ? "hover1 active" : "hover1"}>
                           Gallery
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/reviews"} className="hover1">
+                        <Link href={"/reviews"}  className={router.pathname == "/reviews" ? "hover1 active" : "hover1"}>
                           Reviews
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/reservation"} className="hover1">
+                        <Link href={"/reservation"}  className={router.pathname == "/reservation" ? "hover1 active" : "hover1"}>
                           Reservations
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/contact"} className="hover1">
+                        <Link href={"/contact"}  className={router.pathname == "/contact" ? "hover1 active" : "hover1"}>
                           Contact Us
                         </Link>
                       </div>

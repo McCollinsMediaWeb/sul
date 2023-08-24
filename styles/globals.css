@@ -1770,6 +1770,12 @@ footer .socialItems .SocialItem:hover {
 .FtrIconH.call{
   background-image: url(../public/icons/fcall.png );
 }
+.SideNavMiddle a.active{
+  color: #EB6131 !important;
+border-bottom: 2px solid;
+display: inline-block;
+margin-bottom: 10px;
+}
 @media only screen and (max-width: 1500px) {
   .LogoFix {
     width: 200px;
