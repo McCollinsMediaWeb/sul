@@ -22,7 +22,7 @@ const SulMissions = () => {
     <>
       <div className="bg1">
         <div className="container">
-          <div className="row">
+          <div className="row RowReverseMobile">
           <div className="col-md-6">
               <div
                 className="image-container"

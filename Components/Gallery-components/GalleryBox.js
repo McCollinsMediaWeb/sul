@@ -32,8 +32,8 @@ const GalleryBox = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-          arrows: false,
+          dots: false,
+          centerMode: true,
         },
       },
     ],
@@ -78,7 +78,7 @@ const GalleryBox = () => {
           }}
           viewport={{ once: true }}
         >
-          <div className="ReviewsWrap position-relative">
+          <div className="ReviewsWrap position-relative GalleryFilterBox">
             <div className="slider2">
               <div
                 initial={{ x: -100 }}
@@ -94,7 +94,7 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem">
+                        <div className="ReviewItemBoxItem active">
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/3.jpg"

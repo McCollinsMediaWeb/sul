@@ -61,7 +61,7 @@ const MenuItemRow = (props) => {
                 eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit, sed do{" "}
               </div>
-              <div className="ProductCWrap1">
+              <div className="">
                 <div className="row MenuGridRow">
                   <div className="col-md-3">
                     <div className="SliderItem1">

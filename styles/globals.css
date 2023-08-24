@@ -1290,8 +1290,17 @@ footer .socialItems .SocialItem:hover {
 }
 
 .ReviewItemBoxItem {
-  padding: 15px;
+  padding: 13px;
   background-color: #EAE8E5;
+ 
+}
+.GalleryFilterBox .ReviewItemBoxItem{
+  border: 3px solid transparent;
+}
+.ReviewItemBoxItem.active{
+  border: 3px solid #EB6131;
+  background-color: #EB6131;
+  color: #fff;
 }
 
 .Rv2 {
@@ -2237,5 +2246,61 @@ text-align: center;
     display: block;
     text-align: center;
     font-size: 11px;
+  }
+  .Ct11 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin: 0 auto 15px;
+  }
+  .Ct22 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .contactFormR1 .T7 {
+    margin: 0 auto;
+      margin-top: 0px;
+    min-width: 240px;
+    margin-top: 0;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contactFormR1 .row .col-md-12, .contactFormR1 .row .col-md-6 {
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+  .RowReverseMobile{
+    flex-direction: column-reverse;
+  }
+  .T6 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+ .MenuGridRow{
+margin: 0 -15px;
+  }
+  .MenuGridRow .col-md-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+  .ProductImage{
+    border-radius: 10px;
+  }
+  .GalleryImages .row{
+    margin: 0 -15px;
+  }
+  .GalleryImages .row  .col-md-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+  .GalleryImages {
+    margin-top: 20px;
+  }
+  .cItem{
+    margin-bottom: 10px;
   }
 }
