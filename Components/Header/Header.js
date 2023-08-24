@@ -42,26 +42,26 @@ const Header = () => {
               <div className="LogoFix">
                 <div className="LogoItem">
                   <Link href={"/"} className="">
-                  {isDesktop && (
-                    <Image
-                      src="/mainlogo2.png"
-                      layout="responsive"
-                      width={"320"}
-                      height={"172"}
-                      priority={true}
-                      className="HdLogo"
-                    />
-                  )}
-                   {!isDesktop && (
-                    <Image
-                    src="/mobilelogo.png"
-                    layout="responsive"
-                    width={"174"}
-                    height={"117"}
-                    priority={true}
-                    className="HdLogo"
-                  />
-                   )}
+                    {isDesktop && (
+                      <Image
+                        src="/mainlogo2.png"
+                        layout="responsive"
+                        width={"320"}
+                        height={"172"}
+                        priority={true}
+                        className="HdLogo"
+                      />
+                    )}
+                    {!isDesktop && (
+                      <Image
+                        src="/mobilelogo.png"
+                        layout="responsive"
+                        width={"174"}
+                        height={"117"}
+                        priority={true}
+                        className="HdLogo"
+                      />
+                    )}
                   </Link>
                 </div>
               </div>
@@ -138,11 +138,7 @@ const Header = () => {
               &nbsp;
             </div>
             <div className="SideNav" style={{ height: height + "px" }}>
-              <div
-                className="SliderWrt1"
-                {...animation}
-                viewport={{ once: true }}
-              >
+              <div>
                 <div className="ScrollPart">
                   <div className="SideNavHeader">
                     Sul Menu{" "}
@@ -188,43 +184,47 @@ const Header = () => {
                   </div>
                   <div className="SideNavFooter">
                     <div className="T3">Connect With us</div>
-                    <div className="row HdrRow1">
-                      <div className="col-md-4">
-                        <Image
-                          src="/hero1.jpg"
-                          layout="responsive"
-                          width={"1440"}
-                          height={"900"}
-                          priority={true}
-                          className=""
-                        />
+                    {isDesktop && (
+                      <div>
+                        <div className="row HdrRow1">
+                          <div className="col-md-4">
+                            <Image
+                              src="/hero1.jpg"
+                              layout="responsive"
+                              width={"1440"}
+                              height={"900"}
+                              priority={true}
+                              className=""
+                            />
+                          </div>
+                          <div className="col-md-4">
+                            <Image
+                              src="/hero1.jpg"
+                              layout="responsive"
+                              width={"1440"}
+                              height={"900"}
+                              priority={true}
+                              className=""
+                            />
+                          </div>
+                          <div className="col-md-4">
+                            <Image
+                              src="/hero1.jpg"
+                              layout="responsive"
+                              width={"1440"}
+                              height={"900"}
+                              priority={true}
+                              className=""
+                            />
+                          </div>
+                        </div>
+                        <div className="T4">
+                          Taking care of the planet is a core Sul Principle. Our
+                          packaging is eco-friendly, our herbs are homegrown,
+                          and our commitment is lasting.
+                        </div>
                       </div>
-                      <div className="col-md-4">
-                        <Image
-                          src="/hero1.jpg"
-                          layout="responsive"
-                          width={"1440"}
-                          height={"900"}
-                          priority={true}
-                          className=""
-                        />
-                      </div>
-                      <div className="col-md-4">
-                        <Image
-                          src="/hero1.jpg"
-                          layout="responsive"
-                          width={"1440"}
-                          height={"900"}
-                          priority={true}
-                          className=""
-                        />
-                      </div>
-                    </div>
-                    <div className="T4">
-                      Taking care of the planet is a core Sul Principle. Our
-                      packaging is eco-friendly, our herbs are homegrown, and
-                      our commitment is lasting.
-                    </div>
+                    )}
                     <div className="SocialBoxWrp">
                       <div className="socialItems">
                         <div className="SocialItem">
@@ -261,6 +261,8 @@ const Header = () => {
           </div>
         )}
       </div>
+
+     
     </header>
   );
 };

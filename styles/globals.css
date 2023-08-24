@@ -1695,6 +1695,77 @@ footer .socialItems .SocialItem:hover {
 .PromotionalBlock{
   position: relative;
 }
+.halo-sticky-toolbar-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 9px #0000001f;
+  transition: transform .6s;
+  background: #fff;
+  border: 1px solid #fff;
+}
+.bottom-bar {
+  padding: 3px 15px;
+  min-height: 60px;
+}
+.bottom-bar--list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
+.bottom-bar--list li > a {
+  padding: 7px 2px;
+  display: block;
+  pointer-events: auto;
+  text-align: center;
+  color: #1D1D1B;
+}
+.bottom-bar--list li{
+  position: relative;
+}
+.bottom-bar--list .icon + .text {
+  margin-top: 6px;
+  line-height: 1;
+  font-size: 11px;
+}
+.FtrIconH{
+  width: 26px;
+  height: 26px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.bottom-bar--list li.activeLink::after{
+  content: "";
+  width: 140%;
+  height: 3px;
+  background-color: #EB6131;
+  position: absolute;
+  top: -4px;
+  left: -20%;
+}
+.FtrIconH.home{
+  background-image: url(../public/icons/fhome.png);
+}
+.activeLink .FtrIconH.home{
+  background-image: url(../public/icons/fhomeh.png);
+}
+.FtrIconH.reserve{
+  background-image: url(../public/icons/freservenow.png );
+}
+.activeLink .FtrIconH.reserve{
+  background-image: url(../public/icons/freservenowh.png);
+}
+.FtrIconH.order{
+  background-image: url(../public/icons/fordernow.png );
+}
+.FtrIconH.whatsapp{
+  background-image: url(../public/icons/fwhatsapp.png );
+}
 @media only screen and (max-width: 1500px) {
   .LogoFix {
     width: 200px;
@@ -1731,7 +1802,14 @@ footer .socialItems .SocialItem:hover {
   header{
     padding: 5px 10px !important;
     background-color: #000 !important;
-
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  .StickyHeader header{
+    position: fixed;
+    left: 0;
+    top: 0;
   }
   .T1 {
     font-size: 20px;
@@ -1780,5 +1858,51 @@ footer .socialItems .SocialItem:hover {
   .QCart{
     width: 28px;
     height: 28px;
+  }
+  .SideNav{
+    width: 100%;
+  }
+  .SideNav {
+    border-top-left-radius: 0;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+  }
+  .SideNavHeader{
+    padding: 10px;
+    font-size: 25px;
+  }
+  .ScrollPart{
+    overflow: hidden;
+    width: 100%;
+  }
+  .SideNav .SliderWrt1 {
+    padding: 0;
+  }
+  .CloseBtn {
+    width: 27px;
+    height: 27px;
+    top: 5px;
+    right: 0px;
+  }
+  .SideNavMiddle {
+    padding: 10px;
+  }
+  .SideNavMiddle a{
+    font-size: 20px;
+  }
+  .SideNavFooter {
+    padding: 10px;
+  }
+  .T3 {
+    font-size: 23px;
+  }
+  .SocialItem .Icon {
+    width: 25px;
+    height: 25px;
+  }
+  .socialItems .SocialItem {
+    margin-right: 10px;
+    padding: 7px;
   }
 }

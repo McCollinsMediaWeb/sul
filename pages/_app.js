@@ -41,10 +41,10 @@ function Loading() {
       <div className="loadingMainDiv ">
         <div className="LoadingContent">
           <Image
-            src="/mainlogo2.png"
+            src="/mobilelogo.png"
             layout="responsive"
-            width={"320"}
-            height={"172"}
+            width={"174"}
+            height={"117"}
             priority={true}
             className="HdLogo"
           />

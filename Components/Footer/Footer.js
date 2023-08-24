@@ -1,9 +1,49 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const Footer = () => {
+  const router = useRouter();
   return (
     <div>
+       <div class="halo-sticky-toolbar-mobile mobile-only">
+        <div class="bottom-bar">
+          <ul class="bottom-bar--list">
+            <li className={router.pathname == "/" ? "activeLink" : ""}>
+              <Link href={"/"}>
+                <div class="icon">
+                  <div className="FtrIconH home">&nbsp;</div>
+                </div>
+                <div class="text">Home</div>
+              </Link>
+            </li>
+            <li className={router.pathname == "/reservation" ? "activeLink" : ""}>
+              <Link href={"/reservation"}>
+                <div class="icon">
+                  <div className="FtrIconH reserve">&nbsp;</div>
+                </div>
+                <div class="text">Reserve</div>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"}>
+                <div class="icon">
+                  <div className="FtrIconH order">&nbsp;</div>
+                </div>
+                <div class="text">Order</div>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"}>
+                <div class="icon">
+                  <div className="FtrIconH whatsapp">&nbsp;</div>
+                </div>
+                <div class="text">WhatsApp</div>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
         <footer className="pd-common">
       <div className="FooterWrap">
         <div className="container">
