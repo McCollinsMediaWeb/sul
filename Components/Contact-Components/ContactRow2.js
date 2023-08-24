@@ -7,9 +7,23 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { TextareaAutosize } from "@mui/base/TextareaAutosize";
+import { useState, useEffect } from "react";
+import useMediaQuery from "@/hooks/useMediaQuery";
 const ContactRow2 = () => {
   const color = "#fff";
   const [age, setAge] = React.useState("");
+  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const [inputSize, SetInputSize] = useState("medium");
+  useEffect(() => {
+    if (isDesktop) {
+      SetInputSize("medium");
+      return;
+    }
+    if (!isDesktop) {
+      SetInputSize("small");
+      return;
+    }
+  }, [isDesktop]);
   const handleChange = (event) => {
     setAge(event.target.value);
   };
@@ -40,7 +54,7 @@ const ContactRow2 = () => {
                   <TextField
                     label="Name"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -53,7 +67,7 @@ const ContactRow2 = () => {
                   <TextField
                     label="Phone Number"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -66,7 +80,7 @@ const ContactRow2 = () => {
                   <TextField
                     label="Email"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -76,7 +90,7 @@ const ContactRow2 = () => {
                   />
                 </div>
                 <div className="col-md-6">
-                  <FormControl fullWidth size="medium">
+                  <FormControl fullWidth size={inputSize}>
                     <InputLabel
                       id="demo-simple-select-label"
                       sx={{

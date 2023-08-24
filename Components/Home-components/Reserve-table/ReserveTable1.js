@@ -6,6 +6,8 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useState, useEffect } from "react";
+import useMediaQuery from "@/hooks/useMediaQuery";
 const theme = createTheme({
   palette: {
     primary: { main: "#EB6131" },
@@ -16,9 +18,23 @@ const theme = createTheme({
   },
 });
 
+
+
 const ReservTable1 = () => {
   const color = "#fff";
   const [age, setAge] = React.useState("");
+  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const [inputSize, SetInputSize] = useState("medium");
+  useEffect(() => {
+    if (isDesktop) {
+      SetInputSize("medium");
+      return;
+    }
+    if (!isDesktop) {
+      SetInputSize("small");
+      return;
+    }
+  }, [isDesktop]);
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -41,7 +57,7 @@ const ReservTable1 = () => {
                   <TextField
                     label="Name"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -54,7 +70,7 @@ const ReservTable1 = () => {
                   <TextField
                     label="Phone Number"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -67,7 +83,7 @@ const ReservTable1 = () => {
                   <TextField
                     label="Email"
                     fullWidth
-                    size="medium"
+                    size={inputSize}
                     sx={{
                       svg: { color },
                       input: { color },
@@ -78,7 +94,7 @@ const ReservTable1 = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="form-control-1">
-                    <FormControl fullWidth size="medium">
+                    <FormControl fullWidth size={inputSize}>
                       <InputLabel
                         id="demo-simple-select-label"
                         sx={{
@@ -114,7 +130,7 @@ const ReservTable1 = () => {
                   <div className="form-control-1">
                     <DatePicker
                       fullWidth
-                      slotProps={{ textField: { size: "medium" } }}
+                      slotProps={{ textField: { size: inputSize } }}
                       label="Date"
                       sx={{
                         svg: { color },
@@ -130,7 +146,7 @@ const ReservTable1 = () => {
                     <MobileTimePicker
                       fullWidth
                       label="Time"
-                      slotProps={{ textField: { size: "medium" } }}
+                      slotProps={{ textField: { size: inputSize } }}
                       sx={{
                         svg: { color },
                         input: { color },

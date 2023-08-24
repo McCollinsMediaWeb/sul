@@ -2264,6 +2264,7 @@ text-align: center;
     margin-top: 0;
     width: 100%;
     border-radius: 10px;
+    padding: 11px;
   }
   .contactFormR1 .row .col-md-12, .contactFormR1 .row .col-md-6 {
     padding: 0 10px;
@@ -2302,5 +2303,10 @@ margin: 0 -15px;
   }
   .cItem{
     margin-bottom: 10px;
+  }
+  .form-control-1 label,
+  .form-control-1 input{
+    font-size: 14px !important;
+    font-family: poppins !important;
   }
 }
