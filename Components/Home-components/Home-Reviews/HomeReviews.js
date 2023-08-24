@@ -32,12 +32,13 @@ const HomeReviews = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-          arrows: false,
+          dots: false,
+          centerMode: true,
         },
       },
     ],
   };
+
   return (
     <div className="ReviewBox pd-common">
       <div className="container">

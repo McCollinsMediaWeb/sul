@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import useMediaQuery from "@/hooks/useMediaQuery";
 const HomePromotions = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -21,13 +22,25 @@ const HomePromotions = () => {
   return (
     <div className="PromotionalBlock">
       <div className="position-relative PrBlock1">
+      {isDesktop && (
         <Image
-          src="/pr.jpg"
-          layout="responsive"
-          width={"1440"}
-          height={"542"}
-          className="PrBlock1Img"
-        />
+        src="/pr.jpg"
+        layout="responsive"
+        width={"1440"}
+        height={"542"}
+        className="PrBlock1Img"
+      />
+      )}
+      {!isDesktop && (
+        <Image
+        src="/prmobile.jpg"
+        layout="responsive"
+        width={"540"}
+        height={"542"}
+        className="PrBlock1Img"
+      />
+      )}
+        
 
         <div className="PrBlock1C">
           <div className="container">

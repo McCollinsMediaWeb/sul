@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import useMediaQuery from "@/hooks/useMediaQuery";
 const HomeChef = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -34,6 +35,7 @@ const HomeChef = () => {
                   ease: "easeInOut",
                 }}
               >
+                 {isDesktop && (
                 <Image
                   src="/chef.jpg"
                   layout="responsive"
@@ -41,6 +43,9 @@ const HomeChef = () => {
                   height={"662"}
                   className="HomeAbtImage"
                 />
+                )}
+
+               
               </div>
             </div>
             <div className="col-md-8">
@@ -53,6 +58,15 @@ const HomeChef = () => {
                   <span className="L1 color-fff text-uppercase">Our</span>
                   <div className="L2 color-fff">Chef</div>
                 </div>
+                {!isDesktop && (
+ <Image
+                  src="/chefmobile.jpg"
+                  layout="responsive"
+                  width={"429"}
+                  height={"432"}
+                  className="HomeAbtImage MobileAbtImage"
+                />
+                )}
                 <div className="T10 color-fff">MILTON BRYANT </div>
                 <div className="T9 color-fff">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

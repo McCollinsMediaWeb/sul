@@ -1921,4 +1921,321 @@ margin-bottom: 10px;
     position: relative;
     overflow-x: hidden !important;
   }
+  .pd-common {
+    padding: 20px 0;
+  }
+  .T5 {
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .T5::after{
+    height: 40px;
+  }
+  .T6 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .HomeAbtBox{
+    text-align: center;
+  }
+  .HomeAbtBox .T7{
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .T8 .L2 {
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+    padding-left: 5px;
+    display: inline-block;
+  }
+  .T8 .L1 {
+    position: relative;
+    z-index: 2;
+    top: auto;
+    left: auto;
+  }
+  .T8 {
+    font-size: 25px;
+text-align: center;
+padding-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 15px;
+  }
+  .T8::after{
+    height: 40px;
+  }
+  .T10 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .T9 {
+    max-width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .HomeMenuBox .container::after{
+    content: none;
+  }
+  .Header1Txt {
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .Header1Txt::after{
+    height: 40px;
+  }
+  .Header2 {
+    max-width: 800px;
+    margin: 15px auto;
+  }
+  .slider1 .slick-prev, .slider1 .slick-next{
+    display: none !important;
+  }
+  .ProductCWrap1 {
+    margin: 0 -15px;
+  }
+  .PrdName, .PrdPrice {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .PBottomC{
+    padding: 15px;
+    display: block;
+  }
+  .AddToCartAction::before {
+    content: "";
+    width: 10px;
+    height: 11px;
+  }
+  .AddToCartAction{
+    padding: 7px;
+    margin-top: 10px;
+    max-width: 120px;
+  }
+ .HomeMenuBox  .SliderWrt1 {
+    padding: 0 5px;
+  }
+  .PBottomCL, .PBottomCR {
+    flex: 0 0 1000%;
+    max-width: 100%;
+  }
+  .ProductCWrap1 .T7 {
+    min-width: 200px;
+    margin: 15px auto 0 auto;
+    padding: 10px;
+  }
+  .MobCenter{
+    text-align: center;
+  }
+  .cusienBox{
+    background-color: #1D1D1B;
+  }
+  .cusienBoxHdr1 {
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cusienBoxHdr1::after{
+    height: 40px;
+  }
+  .cusienBoxHdr2 {
+    line-height: 1.6;
+    max-width: 100%;
+    text-align: center;
+  }
+  .PromotionalBlockContent {
+    padding: 15px;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background: #EB6131;
+    
+  }
+  .cusienBox .slick-track {
+    height: auto;
+  }
+  .cusienBox .SliderItem1 {
+    height: auto;
+    overflow: auto;
+  }
+  .cusienBox .SliderWrt1 {
+    padding: 0 5px;
+  }
+  .PTxt1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .PTxt2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .PTxt3 {
+    font-size: 18px;
+  }
+  .cusienBox .PromotionalBlockContent .col-md-5{
+    display: none;
+  }
+  .Ct1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .Ct2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .Ct3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .Ct4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .PrBlock1C .T7 {
+    min-width: 180px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .PrBlock1C {
+    padding: 20px;
+    z-index: 5;
+    text-align: center;
+  }
+  .AddToCartAction1{
+    background-color: #1D1D1B;
+    font-weight: 400;
+  }
+  .ReviewsWrap::after{
+    content: none;
+  }
+
+  .RvHeading {
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .RvHeading::after{
+    height: 40px;
+  }
+  .RT1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .RT2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #EB6131;
+    text-align: center;
+  }
+  .StarItems {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .StarItem {
+    width: 25px;
+    height: 21px;
+  }
+  .MobileAbtImage{
+    margin-bottom: 15px;
+  }
+  .Rv1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .Rv2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .Rname {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .RLocation {
+    font-size: 16px;
+  }
+  .slider2 .slick-dots ,
+  .slider2 .slick-prev, .slider2 .slick-next{
+    display: none !important;
+  }
+  .ReviewAddress::after {
+    width: 30px;
+    height: 30px;
+  }
+  .InstraaLftBoxR{
+    font-size: 20px;
+  }
+  .InstraaLftBoxL {
+    flex: 0 0 40px;
+    max-width: 40px;
+  }
+  .InstaIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .InstaT3 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  .InstaHead {
+    margin-bottom: 20px;
+  }
+  .FooterWrap{
+text-align: center;
+  }
+  .FtrLogo{
+    max-width: 140px !important;
+    margin-bottom: 20px;
+  }
+  .FtrT1 {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+  .FtrLink1 {
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    transition: .5s;
+  }
+  .FtLinkBox .row{
+    margin: 0 -5px;
+    margin-bottom: 15px;
+  }
+  .FtLinkBox .col-md-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+  .socialItems {
+    justify-content: center;
+  }
+  .FooterBottom {
+    padding: 15px 0px;
+    margin-bottom: 70px;
+  }
+  .FoterBtmContent {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+  }
 }
