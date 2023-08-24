@@ -1806,15 +1806,8 @@ footer .socialItems .SocialItem:hover {
   header{
     padding: 5px 10px !important;
     background-color: #000 !important;
-    position: relative;
-    left: auto;
-    top: auto;
   }
-  .StickyHeader header{
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
+  
   .T1 {
     font-size: 22px;
   }
