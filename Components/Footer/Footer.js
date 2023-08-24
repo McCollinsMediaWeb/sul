@@ -44,14 +44,6 @@ const Footer = () => {
                 <div class="text">WhatsApp</div>
               </Link>
             </li>
-            <li>
-              <Link href={"/"}>
-                <div class="icon">
-                  <div className="FtrIconH call">&nbsp;</div>
-                </div>
-                <div class="text">Call Us</div>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
