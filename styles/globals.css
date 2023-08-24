@@ -1507,7 +1507,7 @@ footer .socialItems .SocialItem:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1700,7 +1700,7 @@ footer .socialItems .SocialItem:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9;
   box-shadow: 0 0 9px #0000001f;
   transition: transform .6s;
   background: #fff;
@@ -1904,5 +1904,8 @@ footer .socialItems .SocialItem:hover {
   .socialItems .SocialItem {
     margin-right: 10px;
     padding: 7px;
+  }
+  .MainBanner{
+    min-height: 100vh;
   }
 }
