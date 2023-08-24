@@ -46,7 +46,7 @@ const HeroBanner = (props) => {
     }
   }, [router.pathname]);
   return (
-    <div className="HeroBannerWrp" style={{ width: width + "px", height: height + "px" }}>
+    <div className="HeroBannerWrp">
       {isDesktop && (
         <Image
           src="/hero1.jpg"
