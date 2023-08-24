@@ -71,6 +71,7 @@ export default function App({ Component, pageProps }) {
     <div>
       <Loading />
       <Head>
+      <meta name="color-scheme" content="light only"/>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
