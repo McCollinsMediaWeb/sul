@@ -2,10 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import useMediaQuery from "@/hooks/useMediaQuery";
 const Footer = () => {
   const router = useRouter();
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <div>
+      {!isDesktop && (
        <div class="halo-sticky-toolbar-mobile mobile-only">
         <div class="bottom-bar">
           <ul class="bottom-bar--list">
@@ -44,6 +47,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      )}
         <footer className="pd-common">
       <div className="FooterWrap">
         <div className="container">
