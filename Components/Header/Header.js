@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 import { useRouter } from "next/router";
 const Header = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const router = useRouter();
   const animation = {
     variants: {
@@ -40,6 +42,7 @@ const Header = () => {
               <div className="LogoFix">
                 <div className="LogoItem">
                   <Link href={"/"} className="">
+                  {isDesktop && (
                     <Image
                       src="/mainlogo2.png"
                       layout="responsive"
@@ -48,6 +51,17 @@ const Header = () => {
                       priority={true}
                       className="HdLogo"
                     />
+                  )}
+                   {!isDesktop && (
+                    <Image
+                    src="/mobilelogo.png"
+                    layout="responsive"
+                    width={"174"}
+                    height={"117"}
+                    priority={true}
+                    className="HdLogo"
+                  />
+                   )}
                   </Link>
                 </div>
               </div>

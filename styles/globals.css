@@ -1692,6 +1692,9 @@ footer .socialItems .SocialItem:hover {
 .cusienBox .slick-track{
   height: 320px;
 }
+.PromotionalBlock{
+  position: relative;
+}
 @media only screen and (max-width: 1500px) {
   .LogoFix {
     width: 200px;
@@ -1713,19 +1716,20 @@ footer .socialItems .SocialItem:hover {
     font-size: 14px;
     overflow-x: hidden;
   }
-  .MainHeadrM{
+  .MainHeadrM , .ThumbBoxL{
     display: none;
   }
   .LogoFix {
-    width: 120px;
+    width: 90px !important;
   }
   .LogoFix .LogoItem {
     position: relative;
     top: auto;
     left: auto;
+    width: auto !important;
   }
   header{
-    padding: 0 5px;
+    padding: 5px 10px !important;
     background-color: #000 !important;
 
   }
@@ -1767,5 +1771,14 @@ footer .socialItems .SocialItem:hover {
   .ReserveFormBox .col-md-3{
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .QAccount, .QLocation {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+  }
+  .QCart{
+    width: 28px;
+    height: 28px;
   }
 }
