@@ -1741,12 +1741,12 @@ footer .socialItems .SocialItem:hover {
 }
 .bottom-bar--list li.activeLink::after{
   content: "";
-  width: 140%;
+  width: 120%;
   height: 3px;
   background-color: #EB6131;
   position: absolute;
   top: -4px;
-  left: -20%;
+  left: -10%;
 }
 .FtrIconH.home{
   background-image: url(../public/icons/fhome.png);
@@ -1765,6 +1765,9 @@ footer .socialItems .SocialItem:hover {
 }
 .FtrIconH.whatsapp{
   background-image: url(../public/icons/fwhatsapp.png );
+}
+.FtrIconH.call{
+  background-image: url(../public/icons/fcall.png );
 }
 @media only screen and (max-width: 1500px) {
   .LogoFix {
