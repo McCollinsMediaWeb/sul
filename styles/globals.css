@@ -1819,6 +1819,7 @@ footer .socialItems .SocialItem:hover {
   }
   .BannerBtns{
     display: flex;
+    justify-content: center;
   }
   .BannerBtns a{
     min-width: 120px;
