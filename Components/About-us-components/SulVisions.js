@@ -22,7 +22,7 @@ const SulVisions = () => {
     <>
       <div className="bg1 pd-common pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row RowReverseMobile">
           <div className="col-md-6">
               <div
                 className="image-container"
