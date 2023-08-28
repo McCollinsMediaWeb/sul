@@ -2090,6 +2090,8 @@ margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 5px;
+    min-height: 45px;
+    overflow: hidden;
   }
   .PTxt2 {
     font-size: 15px;
