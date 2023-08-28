@@ -72,7 +72,7 @@ const HomeMenu = () => {
                     <div className="Product box-shadow">
                       <div className="ProductGrid position-relative">
                         <Image
-                          src="/menu/1.jpg"
+                          src="/menu/22.jpg"
                           layout="responsive"
                           width={"257"}
                           height={"358"}
@@ -86,8 +86,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
+                                  <div class="PrdName">Product Name</div>
+                                  <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
                               <div className="PBottomCR">
@@ -111,7 +111,7 @@ const HomeMenu = () => {
                     <div className="Product box-shadow">
                       <div className="ProductGrid position-relative">
                         <Image
-                          src="/menu/2.jpg"
+                          src="/menu/33.jpg"
                           layout="responsive"
                           width={"257"}
                           height={"358"}
@@ -125,8 +125,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
+                                  <div class="PrdName">Product Name</div>
+                                  <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
                               <div className="PBottomCR">
@@ -150,7 +150,7 @@ const HomeMenu = () => {
                     <div className="Product box-shadow">
                       <div className="ProductGrid position-relative">
                         <Image
-                          src="/menu/3.jpg"
+                          src="/menu/44.jpg"
                           layout="responsive"
                           width={"257"}
                           height={"358"}
@@ -164,8 +164,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
+                                  <div class="PrdName">Product Name</div>
+                                  <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
                               <div className="PBottomCR">
@@ -189,7 +189,7 @@ const HomeMenu = () => {
                     <div className="Product box-shadow">
                       <div className="ProductGrid position-relative">
                         <Image
-                          src="/menu/4.jpg"
+                          src="/menu/55.jpg"
                           layout="responsive"
                           width={"257"}
                           height={"358"}
@@ -203,8 +203,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
+                                  <div class="PrdName">Product Name</div>
+                                  <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
                               <div className="PBottomCR">
@@ -228,7 +228,7 @@ const HomeMenu = () => {
                     <div className="Product box-shadow">
                       <div className="ProductGrid position-relative">
                         <Image
-                          src="/menu/1.jpg"
+                          src="/menu/66.jpg"
                           layout="responsive"
                           width={"257"}
                           height={"358"}
@@ -242,125 +242,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
-                                </div>
-                              </div>
-                              <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderItem1">
-                  <div
-                    className="SliderWrt1"
-                    {...animation}
-                    viewport={{ once: true }}
-                  >
-                    <div className="Product box-shadow">
-                      <div className="ProductGrid position-relative">
-                        <Image
-                          src="/menu/2.jpg"
-                          layout="responsive"
-                          width={"257"}
-                          height={"358"}
-                          className="ProductImage"
-                        />
-                        <div className="Ptop">
-                          <div></div>
-                        </div>
-                        <div className="PBottom">
-                          <div>
-                            <div className="PBottomC">
-                              <div className="PBottomCL color-fff">
-                                <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
-                                </div>
-                              </div>
-                              <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderItem1">
-                  <div
-                    className="SliderWrt1"
-                    {...animation}
-                    viewport={{ once: true }}
-                  >
-                    <div className="Product box-shadow">
-                      <div className="ProductGrid position-relative">
-                        <Image
-                          src="/menu/3.jpg"
-                          layout="responsive"
-                          width={"257"}
-                          height={"358"}
-                          className="ProductImage"
-                        />
-                        <div className="Ptop">
-                          <div></div>
-                        </div>
-                        <div className="PBottom">
-                          <div>
-                            <div className="PBottomC">
-                              <div className="PBottomCL color-fff">
-                                <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
-                                </div>
-                              </div>
-                              <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderItem1">
-                  <div
-                    className="SliderWrt1"
-                    {...animation}
-                    viewport={{ once: true }}
-                  >
-                    <div className="Product box-shadow">
-                      <div className="ProductGrid position-relative">
-                        <Image
-                          src="/menu/4.jpg"
-                          layout="responsive"
-                          width={"257"}
-                          height={"358"}
-                          className="ProductImage"
-                        />
-                        <div className="Ptop">
-                          <div></div>
-                        </div>
-                        <div className="PBottom">
-                          <div>
-                            <div className="PBottomC">
-                              <div className="PBottomCL color-fff">
-                                <div>
-                                  <div class="PrdName">Curry Puff Chicken</div>
-                                  <div class="PrdPrice">50 AED</div>
+                                  <div class="PrdName">Product Name</div>
+                                  <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
                               <div className="PBottomCR">

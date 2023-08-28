@@ -20,9 +20,29 @@ const SulVisions = () => {
   };
   return (
     <>
-      <div className="bg1 pd-common ">
+      <div className="bg1 pd-common pt-0">
         <div className="container">
           <div className="row">
+          <div className="col-md-6">
+              <div
+                className="image-container"
+                initial={{ rotate: 5, scale: 0.9 }}
+                whileInView={{ rotate: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src="/homeabout.jpg"
+                  layout="responsive"
+                  width={"577"}
+                  height={"316"}
+                  className="HomeAbtImage"
+                />
+              </div>
+            </div>
           <div className="col-md-6">
               <div
                 className="SliderWrt1"
@@ -48,26 +68,7 @@ const SulVisions = () => {
                 </div>
               </div>
             </div>
-          <div className="col-md-6">
-              <div
-                className="image-container"
-                initial={{ rotate: 5, scale: 0.9 }}
-                whileInView={{ rotate: 0, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.8,
-                  ease: "easeInOut",
-                }}
-              >
-                <Image
-                  src="/homeabout.jpg"
-                  layout="responsive"
-                  width={"577"}
-                  height={"316"}
-                  className="HomeAbtImage"
-                />
-              </div>
-            </div>
+          
             
             
           </div>

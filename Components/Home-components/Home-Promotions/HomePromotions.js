@@ -50,10 +50,10 @@ const HomePromotions = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, type: "spring" }}
             >
-              <div className="Ct1 text-uppercase">shisha</div>
+              <div className="Ct1 text-uppercase">Special</div>
               <div className="Ct2 color-fff">Discount</div>
-              <div className="Ct3 text-uppercase color-fff">50% OFF</div>
-              <div className="Ct4">On first booking</div>
+              <div className="Ct3 text-uppercase color-fff">Russian Shisha</div>
+              <div className="Ct4">Available</div>
               <a class="T7" href="/">
                 Reserve Now
               </a>

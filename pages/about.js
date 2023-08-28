@@ -14,9 +14,6 @@ const about = () => {
      
       <HeroBanner  title="Who We Are "/>
       <AboutSul/>
-      
-      <SulMissions/>
-     
       <SulVisions/>
       <AboutGallery/>
       <HomeMenu/>

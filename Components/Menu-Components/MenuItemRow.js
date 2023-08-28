@@ -73,7 +73,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/1.jpg"
+                              src="/menu/11.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -88,9 +88,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -119,7 +119,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/2.jpg"
+                              src="/menu/22.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -134,9 +134,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -165,7 +165,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/33.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -180,9 +180,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -211,7 +211,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/4.jpg"
+                              src="/menu/44.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -226,9 +226,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -257,7 +257,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/1.jpg"
+                              src="/menu/55.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -272,9 +272,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -303,7 +303,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/2.jpg"
+                              src="/menu/66.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -318,9 +318,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -349,7 +349,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/77.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -364,9 +364,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">
@@ -395,7 +395,7 @@ const MenuItemRow = (props) => {
                         <div className="Product box-shadow">
                           <div className="ProductGrid position-relative">
                             <Image
-                              src="/menu/4.jpg"
+                              src="/menu/88.jpg"
                               layout="responsive"
                               width={"257"}
                               height={"358"}
@@ -410,9 +410,9 @@ const MenuItemRow = (props) => {
                                   <div className="PBottomCL color-fff">
                                     <div>
                                       <div class="PrdName">
-                                        Curry Puff Chicken
+                                        Product Name
                                       </div>
-                                      <div class="PrdPrice">50 AED</div>
+                                      <div class="PrdPrice">Price in AED</div>
                                     </div>
                                   </div>
                                   <div className="PBottomCR">

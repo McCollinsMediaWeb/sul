@@ -1,8 +1,12 @@
-import React from "react";
+import { useState, React } from "react";
 
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
+import Lightbox from "yet-another-react-lightbox";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 const GalleryBox = () => {
   const animation = {
     variants: {
@@ -38,8 +42,37 @@ const GalleryBox = () => {
       },
     ],
   };
+  const [open, setOpen] = useState(false);
   return (
     <div className="ReviewBox pd-common GalleryBox PdArg1 GalleryMenuBg2">
+      <Lightbox
+          open={open}
+          close={() => setOpen(false)}
+          plugins={[Thumbnails]}
+          slides={[
+            { src: "/menu/a.jpg" },
+            { src: "/menu/b.jpg" },
+            { src: "/menu/c.jpg" },
+            { src: "/menu/d.jpg" },
+            { src: "/menu/e.jpg" },
+            { src: "/menu/f.jpg" },
+            { src: "/menu/g.jpg" },
+            { src: "/menu/h.jpg" },
+            { src: "/menu/i.jpg" },
+            { src: "/menu/j.jpg" },
+            { src: "/menu/k.jpg" },
+            { src: "/menu/l.jpg" },
+            { src: "/menu/m.jpg" },
+            { src: "/menu/n.jpg" },
+            { src: "/menu/o.jpg" },
+            { src: "/menu/p.jpg" },
+            { src: "/menu/q.jpg" },
+            { src: "/menu/r.jpg" },
+            { src: "/menu/s.jpg" },
+            { src: "/menu/t.jpg" },
+
+          ]}
+        />
       <div className="container">
         <div className="ReviewBoxHdr">
           <div
@@ -97,10 +130,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem active">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/g1.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -117,10 +150,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/1.jpg"
+                              src="/menu/g2.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -137,10 +170,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/2.jpg"
+                              src="/menu/g3.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -157,10 +190,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/g4.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -177,10 +210,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/4.jpg"
+                              src="/menu/g5.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -197,10 +230,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/g6.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -217,10 +250,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/1.jpg"
+                              src="/menu/g7.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -237,10 +270,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/2.jpg"
+                              src="/menu/g8.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -257,10 +290,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/3.jpg"
+                              src="/menu/g9.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -277,10 +310,10 @@ const GalleryBox = () => {
                         <div className="ReviewItemBoxItem">
                           <div className="GalleryItem1">
                             <Image
-                              src="/menu/4.jpg"
+                              src="/menu/g10.jpg"
                               layout="responsive"
-                              width={"257"}
-                              height={"358"}
+                              width={"411"}
+                              height={"449"}
                               className="GalleryItemImage"
                             />
                           </div>
@@ -295,7 +328,7 @@ const GalleryBox = () => {
           </div>
           <div className="GalleryImages">
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-3"  onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -303,16 +336,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/1.jpg"
+                      src="/i1.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -320,16 +353,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/2.jpg"
+                      src="/i2.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -337,16 +370,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/3.jpg"
+                      src="/i3.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -354,16 +387,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/4.jpg"
+                      src="/i4.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -371,16 +404,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/1.jpg"
+                      src="/menu/g1.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -388,16 +421,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/2.jpg"
+                      src="/menu/g2.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -405,16 +438,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/3.jpg"
+                      src="/menu/g3.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -422,16 +455,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/4.jpg"
+                      src="/menu/g4.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -439,16 +472,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/1.jpg"
+                      src="/menu/g5.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -456,16 +489,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/2.jpg"
+                      src="/menu/g6.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -473,16 +506,16 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/3.jpg"
+                      src="/menu/g7.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
@@ -490,10 +523,214 @@ const GalleryBox = () => {
                 >
                   <div className="GalleryImage">
                     <Image
-                      src="/menu/4.jpg"
+                      src="/menu/g20.jpg"
                       layout="responsive"
-                      width={"257"}
-                      height={"358"}
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g9.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g10.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g11.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g12.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g13.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g14.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g15.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g16.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g17.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g18.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g19.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
+                      className="GalleryItemImage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
+                <div
+                  className="SliderWrt1"
+                  {...animation}
+                  viewport={{ once: true }}
+                >
+                  <div className="GalleryImage">
+                    <Image
+                      src="/menu/g20.jpg"
+                      layout="responsive"
+                      width={"411"}
+                      height={"449"}
                       className="GalleryItemImage"
                     />
                   </div>

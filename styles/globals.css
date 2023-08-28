@@ -1178,6 +1178,9 @@ footer .socialItems .SocialItem:hover {
   padding: 0 15px 0px 0px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, .17);
 }
+.MenuGridRow .ProductGrid{
+  z-index: 3;
+}
 
 .PrBlock1C {
   position: absolute;
@@ -1189,6 +1192,7 @@ footer .socialItems .SocialItem:hover {
   display: flex;
   align-items: center;
   height: 100%;
+  z-index: 2;
 }
 
 .Ct1 {
@@ -1471,7 +1475,6 @@ footer .socialItems .SocialItem:hover {
 }
 
 .GalleryItem1 {
-  height: 150px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1488,7 +1491,7 @@ footer .socialItems .SocialItem:hover {
 }
 
 .GalleryImages {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .GalleryImages .row {
@@ -1698,9 +1701,7 @@ footer .socialItems .SocialItem:hover {
 .MuiFormControl-root{
   width: 100% !important;
 }
-.cusienBox .slick-track{
-  height: 320px;
-}
+
 .PromotionalBlock{
   position: relative;
 }

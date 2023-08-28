@@ -83,10 +83,10 @@ const HomeCusience = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/menu/c11.jpg"
+                        src="/menu/c111.jpg"
                         layout="responsive"
-                        width={"257"}
-                        height={"358"}
+                        width={"458"}
+                        height={"254"}
                         className="ProductImage"
                       />
                       <div className="PromotionalBlockContent">
@@ -95,11 +95,11 @@ const HomeCusience = () => {
                             <div className="col-md-5">&nbsp;</div>
                             <div className="col-md-7">
                               <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
+                                <div className="PTxt1">Palestinian Breakfast</div>
+                                {/* <div className="PTxt2 color-fff">
                                   ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
+                                </div> */}
+                                <div className="PTxt3 color-fff">65 AED</div>
                                 <Link href={"/"} className="AddToCartAction1">
                                   Order Now
                                 </Link>
@@ -119,10 +119,10 @@ const HomeCusience = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/menu/c22.jpg"
+                        src="/menu/c222.jpg"
                         layout="responsive"
-                        width={"257"}
-                        height={"358"}
+                        width={"458"}
+                        height={"254"}
                         className="ProductImage"
                       />
                       <div className="PromotionalBlockContent">
@@ -131,11 +131,11 @@ const HomeCusience = () => {
                             <div className="col-md-5">&nbsp;</div>
                             <div className="col-md-7">
                               <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
+                                <div className="PTxt1">Syrian Breakfast</div>
+                                {/* <div className="PTxt2 color-fff">
                                   ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
+                                </div> */}
+                                <div className="PTxt3 color-fff">65 AED</div>
                                 <Link href={"/"} className="AddToCartAction1">
                                 Order Now
                                 </Link>
@@ -155,10 +155,10 @@ const HomeCusience = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/menu/c3.jpg"
+                        src="/menu/c333.jpg"
                         layout="responsive"
-                        width={"257"}
-                        height={"358"}
+                        width={"458"}
+                        height={"254"}
                         className="ProductImage"
                       />
                       <div className="PromotionalBlockContent">
@@ -167,11 +167,11 @@ const HomeCusience = () => {
                             <div className="col-md-5">&nbsp;</div>
                             <div className="col-md-7">
                               <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
+                                <div className="PTxt1">Jaffa Breakfast</div>
+                                {/* <div className="PTxt2 color-fff">
                                   ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
+                                </div> */}
+                                <div className="PTxt3 color-fff">65 AED</div>
                                 <Link href={"/"} className="AddToCartAction1">
                                 Order Now
                                 </Link>
@@ -191,10 +191,10 @@ const HomeCusience = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/menu/c11.jpg"
+                        src="/menu/c444.jpg"
                         layout="responsive"
-                        width={"257"}
-                        height={"358"}
+                        width={"458"}
+                        height={"254"}
                         className="ProductImage"
                       />
                       <div className="PromotionalBlockContent">
@@ -203,83 +203,11 @@ const HomeCusience = () => {
                             <div className="col-md-5">&nbsp;</div>
                             <div className="col-md-7">
                               <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
-                                  ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                Order Now
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderItem1">
-                  <div
-                    className="SliderWrt1"
-                    {...animation}
-                    viewport={{ once: true}}
-                  >
-                    <div className="PromotionalBlock position-relative">
-                      <Image
-                        src="/menu/c22.jpg"
-                        layout="responsive"
-                        width={"257"}
-                        height={"358"}
-                        className="ProductImage"
-                      />
-                      <div className="PromotionalBlockContent">
-                        <div className="width-full">
-                          <div className="row">
-                            <div className="col-md-5">&nbsp;</div>
-                            <div className="col-md-7">
-                              <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
-                                  ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                Order Now
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="SliderItem1">
-                  <div
-                    className="SliderWrt1"
-                    {...animation}
-                    viewport={{ once: true}}
-                  >
-                    <div className="PromotionalBlock position-relative">
-                      <Image
-                        src="/menu/c3.jpg"
-                        layout="responsive"
-                        width={"257"}
-                        height={"358"}
-                        className="ProductImage"
-                      />
-                      <div className="PromotionalBlockContent">
-                        <div className="width-full">
-                          <div className="row">
-                            <div className="col-md-5">&nbsp;</div>
-                            <div className="col-md-7">
-                              <div className="text-right">
-                                <div className="PTxt1">Middle Eastern</div>
-                                <div className="PTxt2 color-fff">
-                                  ON FIRST ORDER
-                                </div>
-                                <div className="PTxt3 color-fff">25% OFF</div>
+                                <div className="PTxt1">Tunisian Breakfast</div>
+                                {/* <div className="PTxt2 color-fff">
+                                Tunisian Breakfast
+                                </div> */}
+                                <div className="PTxt3 color-fff">65 AED</div>
                                 <Link href={"/"} className="AddToCartAction1">
                                 Order Now
                                 </Link>

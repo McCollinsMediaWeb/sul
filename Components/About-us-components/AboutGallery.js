@@ -64,7 +64,7 @@ const AboutGallery = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/behind-the-scene/thumb/1.jpg"
+                        src="/behind-the-scene/thumb/11.jpg"
                         layout="responsive"
                         width={"388"}
                         height={"479"}
@@ -81,7 +81,7 @@ const AboutGallery = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/behind-the-scene/thumb/2.jpg"
+                        src="/behind-the-scene/thumb/22.jpg"
                         layout="responsive"
                         width={"388"}
                         height={"479"}
@@ -98,7 +98,7 @@ const AboutGallery = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/behind-the-scene/thumb/3.jpg"
+                        src="/behind-the-scene/thumb/33.jpg"
                         layout="responsive"
                         width={"388"}
                         height={"479"}
@@ -115,7 +115,7 @@ const AboutGallery = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/behind-the-scene/thumb/4.jpg"
+                        src="/behind-the-scene/thumb/44.jpg"
                         layout="responsive"
                         width={"388"}
                         height={"479"}
@@ -132,7 +132,7 @@ const AboutGallery = () => {
                   >
                     <div className="PromotionalBlock position-relative">
                       <Image
-                        src="/behind-the-scene/thumb/5.jpg"
+                        src="/behind-the-scene/thumb/55.jpg"
                         layout="responsive"
                         width={"388"}
                         height={"479"}
@@ -150,16 +150,11 @@ const AboutGallery = () => {
           close={() => setOpen(false)}
           plugins={[Thumbnails]}
           slides={[
-            { src: "/behind-the-scene/full/a1.jpg" },
-            { src: "/behind-the-scene/full/a2.jpg" },
-            {
-              src: "/behind-the-scene/full/a3.jpg",
-            },
-            { src: "/behind-the-scene/full/a4.jpg" },
-            { src: "/behind-the-scene/full/a5.jpg" },
-            { src: "/behind-the-scene/full/a6.jpg" },
-            { src: "/behind-the-scene/full/a7.jpg" },
-            { src: "/behind-the-scene/full/a8.jpg" },
+            { src: "/behind-the-scene/full/11.jpg" },
+            { src: "/behind-the-scene/full/22.jpg" },
+            { src: "/behind-the-scene/full/33.jpg" },
+            { src: "/behind-the-scene/full/44.jpg" },
+            { src: "/behind-the-scene/full/55.jpg" },
           ]}
         />
         </div>
