@@ -338,10 +338,11 @@ body.PanelActivated {
   padding: 25px;
   color: #242424;
   font-weight: 600;
-  font-size: 33px;
+  font-size: 27px;
   line-height: 1;
   position: relative;
   padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .CloseBtn {

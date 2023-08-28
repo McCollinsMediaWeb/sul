@@ -171,11 +171,6 @@ const Header = () => {
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/reviews"}  className={router.pathname == "/reviews" ? "hover1 active" : "hover1"}>
-                          Reviews
-                        </Link>
-                      </div>
-                      <div onClick={() => setOpen(false)}>
                         <Link href={"/reservation"}  className={router.pathname == "/reservation" ? "hover1 active" : "hover1"}>
                           Reservations
                         </Link>
