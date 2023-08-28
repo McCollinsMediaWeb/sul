@@ -80,7 +80,7 @@ const HeroBanner = (props) => {
               <div className="BannerContent">
                 <div className="T1">{props.title} </div>
                 <div className="T2">
-                With a menu that can be as authentically Middle East as it can be, we have a menu comprising of delicious main courses, flavorful desserts, and refreshing beverages. 
+                {props.subtitle}
                 </div>
                 <div>
                   <div className="BannerBtnWrp">

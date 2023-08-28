@@ -92,9 +92,7 @@ const GalleryBox = () => {
               </div>
               <div className="col-md-8">
                 <div className="RT1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor .
+                Embark on a virtual culinary adventure as we unveil the essence of Middle Eastern cuisine like never before
                 </div>
                 <div className="RT2">Food Lovers Showcase</div>
               </div>

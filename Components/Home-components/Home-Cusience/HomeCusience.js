@@ -50,17 +50,15 @@ const HomeCusience = () => {
           transition={{ delay: 0.2, type: "spring" }}
         >
           <div className="cusienBoxHdr">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-4">
                 <div className="cusienBoxHdr1 text-uppercase">
-                  <span>Our CUISINES</span>
+                  <span>Our Breakfasts</span>
                 </div>
               </div>
               <div className="col-md-8 color-fff">
                 <div className="cusienBoxHdr2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor consectetur adipiscing.
+                Rise and shine with a taste of an arabian morning adventure,
                 </div>
               </div>
             </div>

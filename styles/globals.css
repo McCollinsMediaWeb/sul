@@ -12,6 +12,14 @@ a {
 .bg1 {
   background-color: #EB6131;
 }
+.ChefUl{
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 0;
+  margin-top: 20px;
+  padding-left: 15px;
+}
 
 .MainBanner {
   width: 100%;
@@ -21,6 +29,9 @@ a {
   transition: 0.5s;
   overflow: hidden;
   height: 100vh !important;
+}
+.ReviewBoxHdr{
+  margin-bottom: 30px;
 }
 
 @keyframes leaves {
@@ -202,6 +213,7 @@ header {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 25px;
+  text-transform: capitalize;
 }
 
 .T2 {
@@ -2314,5 +2326,17 @@ margin: 0 -15px;
   .form-control-1 input{
     font-size: 14px !important;
     font-family: poppins !important;
+  }
+  .ChefUl{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 15px;
+font-weight: 300;
+text-align: center;
+
+  }
+  .ReviewBoxHdr{
+    margin-bottom: 10px;
   }
 }

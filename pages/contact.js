@@ -10,7 +10,7 @@ import MapBox from "@/Components/Contact-Components/MapBox";
 const contact = () => {
   return (
     <div>
-      <HeroBanner title="Contact Us For Your Questions"/>
+      <HeroBanner title="Contact us for your questions" subtitle="Got Questions? We're Here to Help! Feel free to reach out to us for any inquiries you may have. Our friendly team is ready to assist you. Get in touch with us today!"/>
       <ContactRow1/>
       <ContactRow2/>
       <MapBox/>

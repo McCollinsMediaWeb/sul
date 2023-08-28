@@ -6,7 +6,7 @@ import ReservTable1 from "@/Components/Home-components/Reserve-table/ReserveTabl
 const Reservation = () => {
   return (
     <div>
-      <HeroBanner title="Savor Authenic Middle Eastern Cuisine"/>
+       <HeroBanner title="Reserve Your Table Now" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
       <ReservTable1 />
       <HomeReviews/>
       <InstagramComponent/>

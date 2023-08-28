@@ -57,9 +57,7 @@ const MenuItemRow = (props) => {
                 </div>
               </div>
               <div className="Header2 text-center color-fff">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do{" "}
+               {props.sectiondesc}
               </div>
               <div className="">
                 <div className="row MenuGridRow">

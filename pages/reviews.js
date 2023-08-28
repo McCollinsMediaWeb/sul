@@ -8,7 +8,7 @@ const Reviews = () => {
   return (
     <>
       <div>
-      <HeroBanner  title="Explore Our Customer Reviews"/>
+      <HeroBanner title="Explore Our Customer Reviews" subtitle="Discover What Our Valued Customers Are Saying.Discover the experiences that our valued customers have shared after indulging in our authentic Middle Eastern culinary creations. "/>
       <HomeReviews/>
       
       <InstagramComponent/>

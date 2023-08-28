@@ -67,15 +67,18 @@ const HomeChef = () => {
                   className="HomeAbtImage MobileAbtImage"
                 />
                 )}
-                <div className="T10 color-fff">MILTON BRYANT </div>
+                <div className="T10 color-fff">Hussain</div>
                 <div className="T9 color-fff">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor consectetur adipiscing elit, sed do
-                  eiusmod tempor incidition ullam. tempor incidition ullamco
-                  laboris nisi ut aliquip ex ea commodo condor consectetur
-                  adipiscing elit
+                Prepare for a mouthwatering journey through a fusion of Middle Eastern cuisines and palestinian cuisines as expert Chef Hussein delights Dubai with his culinary expertise.  Experience the actual essence of Middle Eastern cuisine as it has been expertly created by a true gourmet.
                 </div>
+                <ul className="ChefUl">
+                  <li>Loved cooking</li>
+                  <li>Learned from Grandma</li>
+                  <li>Started his career as chef</li>
+                  <li>Took part in TV show</li>
+                  <li>Chefs said he has good understanding of flavours, fusions </li>
+                  <li>Bringing from Palestanian food to dubai with a twist </li>
+                </ul>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Gallery = () => {
   return (
     <>
       <div>
-      <HeroBanner  title="Explore Our Showcase"/>
+      <HeroBanner title="Showreel of Our Menu" subtitle="From our carefully crafted Daily Dish to the hearty Breakfast, Lunch, and Dinner selections where every bite tells a story of tradition and taste"/>
       <GalleryBox/>
       <HomeReviews/>
       <InstagramComponent/>

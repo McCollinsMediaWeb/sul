@@ -56,14 +56,14 @@ const HomeReviews = () => {
             <div className="row">
               <div className="col-md-4">
                 <div className="RvHeading">
-                  <span>Our Happy customers </span>
+                  <span>Customer Review </span>
                 </div>
               </div>
               <div className="col-md-8">
                 <div className="RT1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor .
+                Words from Our Happy Customers: Discover the Delight of Dining with Us!
+At Sul Me  our passion is not only to serve exquisite dishes but to create unforgettable dining experiences.
+
                 </div>
                 <div className="RT2">Food Lovers Feedback</div>
                 <div className="RT3">

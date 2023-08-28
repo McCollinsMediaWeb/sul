@@ -57,9 +57,7 @@ const HomeMenu = () => {
               </div>
             </div>
             <div className="Header2 text-center color-fff">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do{" "}
+            With our delectable Middle Eastern menu, you can immerse yourself in a world of flavors. 
             </div>
             <div className="ProductCWrap1">
               <Slider {...settings}>

@@ -12,7 +12,7 @@ const about = () => {
   return (
     <div>
      
-      <HeroBanner  title="Who We Are "/>
+     <HeroBanner title="Who We are" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
       <AboutSul/>
       <SulVisions/>
       <AboutGallery/>

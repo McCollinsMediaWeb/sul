@@ -12,7 +12,7 @@ const index = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <div>
-      <HeroBanner title="Savor Authenic Middle Eastern Cuisine"/>
+      <HeroBanner title="Explore Middle Eastern cuisine with us" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
       {isDesktop && (
       <HomeAbout/>
       )}
