@@ -20,7 +20,7 @@ const HomeAbout = () => {
   };
   return (
     <>
-      <div className="bg1 pd-common HomeAbtBox">
+      <div className="bg1 pd-common HomeAbtBox pb-0 abtBoxT">
         <div className="container">
           <div className="row">
             <div className="col-md-6">

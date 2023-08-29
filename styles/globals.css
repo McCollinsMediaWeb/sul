@@ -1993,7 +1993,7 @@ margin-bottom: 10px;
     font-size: 25px;
 text-align: center;
 padding-bottom: 20px;
-margin-top: 20px;
+margin-top: 0px;
 margin-bottom: 15px;
   }
   .T8::after{
@@ -2347,5 +2347,8 @@ text-align: center;
   }
   .ReviewBoxHdr{
     margin-bottom: 10px;
+  }
+  .pb-0.abtBoxT{
+    padding-bottom: 20px !important;
   }
 }

@@ -13,10 +13,11 @@ const index = () => {
   return (
     <div>
       <HeroBanner title="Explore Middle Eastern cuisine with us" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
+      <HomeChef/>
       {isDesktop && (
       <HomeAbout/>
       )}
-      <HomeChef/>
+      
       <HomeMenu/>
       
       <HomeCusience/>

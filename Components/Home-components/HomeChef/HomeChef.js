@@ -21,7 +21,7 @@ const HomeChef = () => {
   };
   return (
     <>
-      <div className="bg1 HomeChefBox">
+      <div className="bg1 HomeChefBox pd-common">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
