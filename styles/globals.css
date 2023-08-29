@@ -1856,18 +1856,19 @@ margin-bottom: 10px;
   }
   .BannerBtns a{
     min-width: 120px;
-    font-size: 13px;
-    padding: 8px 10px;
-    padding-right: 30px;
+    font-size: 12px;
+    padding: 7px 10px;
+    padding-right: 25px;
   }
   .BannerBtns a.BannerBtn1{
     margin-right: 10px;
   }
   .BannerBtns a::after{
-    width: 13px !important;
-    height: 13px;
-    top: 12px;
+    width: 12px !important;
+    height: 12px;
+    top: 10px;
     margin-left: 5px;
+    right: 9px;
   }
   .RserveHeader1 {
     font-size: 19px;
