@@ -76,7 +76,7 @@ const HeroBanner = (props) => {
         muted
         loop
         playsInline
-        poster="/hero1mobile.jpg"
+        poster="/hero1.jpg"
         className="MainBannerVideo"
       />
       )}
