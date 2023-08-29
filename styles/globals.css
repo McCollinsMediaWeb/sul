@@ -218,6 +218,7 @@ header {
 
 .T2 {
   margin-bottom: 25px;
+  font-size: 18px;
 }
 
 .yarl__carousel_with_slides {
@@ -1849,6 +1850,7 @@ margin-bottom: 10px;
   }
   .T2 {
     margin-bottom: 20px;
+    font-size: 15px;
   }
   .BannerBtns{
     display: flex;
