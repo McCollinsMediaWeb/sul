@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import { useState, React, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -13,6 +12,7 @@ import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { useRouter } from "next/router";
 
 const HeroBanner = (props) => {
+  const videoRef = useRef(null);
   const { height, width } = useWindowDimensions();
   const animation = {
     variants: {
@@ -45,29 +45,65 @@ const HeroBanner = (props) => {
       return;
     }
   }, [router.pathname]);
+  useEffect(() => {
+    const handleInteraction = () => {
+      if (videoRef.current && videoRef.current.paused) {
+        videoRef.current.play();
+      }
+    };
+
+    // Attach the interaction event listener to the video element
+    if (videoRef.current) {
+      videoRef.current.addEventListener("click", handleInteraction);
+    }
+
+    return () => {
+      // Clean up the event listener when the component unmounts
+      if (videoRef.current) {
+        videoRef.current.removeEventListener("click", handleInteraction);
+      }
+    };
+  }, []);
   return (
     <div className="HeroBannerWrp">
       {isDesktop && (
-        <Image
-          src="/hero1.jpg"
-          layout="responsive"
-          width={"1440"}
-          height={"900"}
-          priority={true}
-          className="MainBanner"
-          
-        />
+        <video
+        ref={videoRef}
+        src="/mainbanner.mp4"
+        width="100%"
+        height="700"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/hero1mobile.jpg"
+        className="MainBannerVideo"
+      />
       )}
       {!isDesktop && (
-        <Image
-          src="/hero1mobile.jpg"
-          layout="responsive"
-          width={"612"}
-          height={"900"}
-          priority={true}
-          className="MainBanner"
-        />
+        <video
+        ref={videoRef}
+        src="/mainbanner1.mp4"
+        width="100%"
+        height="700"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/hero1mobile.jpg"
+        className="MainBannerVideo"
+      />
+        // <Image
+        //   src="/hero1mobile.jpg"
+        //   layout="responsive"
+        //   width={"612"}
+        //   height={"900"}
+        //   priority={true}
+        //   className="MainBanner"
+        // />
       )}
+      
+     
       <div className="Layer2">&nbsp;</div>
       <div className="Layer1">
         <div className="fullWidth">
@@ -86,11 +122,10 @@ const HeroBanner = (props) => {
                   <div className="BannerBtnWrp">
                     <div className="BannerBtns">
                       <a
-                        href="javascript:void(0);"
+                        href="#"
                         className="BannerBtn1"
-                        onClick={() => setOpen(true)}
                       >
-                        Play Now
+                        Order Now
                       </a>
                       
                       <Link href={booknowUrl} className="BannerBtn2">
