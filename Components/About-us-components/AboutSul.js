@@ -60,7 +60,7 @@ const AboutSul = () => {
                 }}
               >
                 <Image
-                  src="/homeabout.jpg"
+                  src="/homeabout1.jpg"
                   layout="responsive"
                   width={"577"}
                   height={"316"}

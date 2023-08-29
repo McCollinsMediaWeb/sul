@@ -37,7 +37,7 @@ const HomeChef = () => {
               >
                  {isDesktop && (
                 <Image
-                  src="/chef.jpg"
+                  src="/chef1.jpg"
                   layout="responsive"
                   width={"429"}
                   height={"662"}
@@ -60,7 +60,7 @@ const HomeChef = () => {
                 </div>
                 {!isDesktop && (
  <Image
-                  src="/chefmobile.jpg"
+                  src="/chefmobile1.jpg"
                   layout="responsive"
                   width={"429"}
                   height={"432"}
