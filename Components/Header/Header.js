@@ -109,7 +109,7 @@ const Header = () => {
             <div className="MainHeadrR">
               <div className="ThumbBox">
                 <div className="ThumbBoxL">
-                  <a href="#">Order Now</a>
+                  <a href="https://www.talabat.com/uae/sul-me-restaurant-llc" target="_blank">Order Now</a>
                 </div>
                 <div className="ThumbBoxR">
                   <div class="QuickActionIcons">

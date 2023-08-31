@@ -29,12 +29,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <a href="https://www.talabat.com/uae/sul-me-restaurant-llc" target="_blank">
                 <div class="icon">
                   <div className="FtrIconH order">&nbsp;</div>
                 </div>
                 <div class="text">Order</div>
-              </Link>
+              </a>
             </li>
             <li>
               <a href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services">
@@ -92,7 +92,7 @@ const Footer = () => {
                     <Link href={"/contact"} className="FtrLink1 hover2">
                       Contact Us
                     </Link>
-                    <a href="#" className="FtrLink1 hover2">
+                    <a href="https://www.talabat.com/uae/sul-me-restaurant-llc" className="FtrLink1 hover2" target="_blank">
                       Order Now
                     </a>
                     <Link href={"/reviews"} className="FtrLink1 hover2">

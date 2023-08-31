@@ -122,7 +122,7 @@ const HeroBanner = (props) => {
                   <div className="BannerBtnWrp">
                     <div className="BannerBtns">
                       <a
-                        href="#"
+                        href="https://www.talabat.com/uae/sul-me-restaurant-llc" target="_blank"
                         className="BannerBtn1"
                       >
                         Order Now
