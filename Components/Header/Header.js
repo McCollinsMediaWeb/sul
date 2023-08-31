@@ -113,10 +113,10 @@ const Header = () => {
                 </div>
                 <div className="ThumbBoxR">
                   <div class="QuickActionIcons">
-                    <a href="javascript:void(0);">
+                    <a href="https://goo.gl/maps/kYd19Pmdzu68CztL8" target="_blank">
                       <span class="QLocation">&nbsp;</span>
                     </a>
-                    <a href="javascript:void(0);">
+                    <a href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services" target="_blank">
                       <span class="QAccount">&nbsp;</span>
                     </a>
                     <a href="javascript:void(0);" onClick={() => setOpen(true)}>
@@ -188,56 +188,51 @@ const Header = () => {
                       <div>
                         <div className="row HdrRow1">
                           <div className="col-md-4">
-                            <Image
-                              src="/hero1.jpg"
-                              layout="responsive"
-                              width={"1440"}
-                              height={"900"}
-                              priority={true}
-                              className=""
-                            />
+                          <Image
+                        src="/i1.jpg"
+                        layout="responsive"
+                        width={"400"}
+                        height={"449"}
+                        className=""
+                      />
                           </div>
                           <div className="col-md-4">
-                            <Image
-                              src="/hero1.jpg"
-                              layout="responsive"
-                              width={"1440"}
-                              height={"900"}
-                              priority={true}
-                              className=""
-                            />
+                          <Image
+                        src="/i2.jpg"
+                        layout="responsive"
+                        width={"400"}
+                        height={"449"}
+                        className=""
+                      />
                           </div>
                           <div className="col-md-4">
-                            <Image
-                              src="/hero1.jpg"
-                              layout="responsive"
-                              width={"1440"}
-                              height={"900"}
-                              priority={true}
-                              className=""
-                            />
+                          <Image
+                        src="/i3.jpg"
+                        layout="responsive"
+                        width={"400"}
+                        height={"449"}
+                        className=""
+                      />
                           </div>
                         </div>
                         <div className="T4">
-                          Taking care of the planet is a core Sul Principle. Our
-                          packaging is eco-friendly, our herbs are homegrown,
-                          and our commitment is lasting.
+                        Follow us for mouthwatering food photos, special offers, and a taste of our vibrant dining experience
                         </div>
                       </div>
                     )}
                     <div className="SocialBoxWrp">
                       <div className="socialItems">
                         <div className="SocialItem">
-                          <a href="#" target="_blank">
+                          <a href="https://www.instagram.com/sulmeae/" target="_blank">
                             <span className="Icon instagram">&nbsp;</span>
                           </a>
                         </div>
                         <div className="SocialItem">
-                          <a href="#" target="_blank">
+                          <a href="https://www.facebook.com/Sulme.uae/" target="_blank">
                             <span className="Icon facebook">&nbsp;</span>
                           </a>
                         </div>
-                        <div className="SocialItem">
+                        {/* <div className="SocialItem">
                           <a href="#" target="_blank">
                             <span className="Icon twitter">&nbsp;</span>
                           </a>
@@ -246,7 +241,7 @@ const Header = () => {
                           <a href="#" target="_blank">
                             <span className="Icon youtube">&nbsp;</span>
                           </a>
-                        </div>
+                        </div> */}
                         <div className="SocialItem">
                           <a href="#" target="_blank">
                             <span className="Icon whatsapp">&nbsp;</span>

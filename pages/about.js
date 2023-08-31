@@ -8,11 +8,13 @@ import AboutSul from "@/Components/About-us-components/AboutSul";
 import SulMissions from "@/Components/About-us-components/SulMissions";
 import SulVisions from "@/Components/About-us-components/SulVisions";
 import AboutGallery from "@/Components/About-us-components/AboutGallery";
+import HomeChef from "@/Components/Home-components/HomeChef/HomeChef";
 const about = () => {
   return (
     <div>
      
      <HeroBanner title="Who We are" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
+     <HomeChef/>
       <AboutSul/>
       <SulVisions/>
       <AboutGallery/>

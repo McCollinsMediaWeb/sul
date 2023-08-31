@@ -938,7 +938,7 @@ footer .socialItems .SocialItem:hover {
   font-size: 13px;
   text-align: center;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 6px;
   border-radius: 30px;
   cursor: pointer;
   display: block;
@@ -955,8 +955,8 @@ footer .socialItems .SocialItem:hover {
 .AddToCartAction::before {
   content: "";
   width: 15px;
-  height: 16px;
-  background-image: url(../public/icons/cart.png);
+  height: 15px;
+  background-image: url(../public/icons/whitecallbtn.png);
   display: inline-block;
   background-size: 100% 100%;
   margin-right: 8px;
@@ -1309,9 +1309,13 @@ footer .socialItems .SocialItem:hover {
   font-weight: 500;
   font-style: normal;
   color: #1d1d1b;
-  font-size: 21px;
-  margin-bottom: 15px;
+  font-size: 19px;
+  margin-bottom: 10px;
   line-height: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .ReviewItemBoxItem {
@@ -1331,6 +1335,11 @@ footer .socialItems .SocialItem:hover {
 .Rv2 {
   font-size: 15px;
   margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 84px;
 }
 
 .Rname {
@@ -2049,7 +2058,7 @@ margin-bottom: 15px;
   .AddToCartAction{
     padding: 7px;
     margin-top: 10px;
-    max-width: 120px;
+    max-width: 160px;
   }
  .HomeMenuBox  .SliderWrt1 {
     padding: 0 5px;
@@ -2195,19 +2204,21 @@ margin-bottom: 15px;
     margin-bottom: 15px;
   }
   .Rv1 {
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 10px;
   }
   .Rv2 {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 10px;
+    -webkit-line-clamp: 4;
+    min-height: 10px;
   }
   .Rname {
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 5px;
   }
   .RLocation {
-    font-size: 16px;
+    font-size: 13px;
   }
   .slider2 .slick-dots ,
   .slider2 .slick-prev, .slider2 .slick-next{

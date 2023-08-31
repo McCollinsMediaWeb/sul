@@ -106,18 +106,13 @@ At Sul Me  our passion is not only to serve exquisite dishes but to create unfor
                         viewport={{ once: true }}
                       >
                         <div className="ReviewItemBoxItem">
-                          <div className="Rv1">Lorem ipsum dolo</div>
+                          <div className="Rv1">If There Were More Than 5 Stars I Would Definitely Like To Rate Than 5</div>
                           <div className="Rv2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit “
+                            “If There Were More Than 5 Stars I Would Definitely Like To Rate Than 5, Such An Amazing Place Everything Was Nice Such As Food, Shesha, Highley Recommended “
                           </div>
                           <div className="ReviewAddress">
                             <div className="Rname text-uppercase">
-                              Ali Mohammad
+                            Farooq Ahmad
                             </div>
                             <div className="RLocation text-uppercase">
                               Dubai
@@ -133,18 +128,13 @@ At Sul Me  our passion is not only to serve exquisite dishes but to create unfor
                         viewport={{ once: true }}
                       >
                         <div className="ReviewItemBoxItem">
-                          <div className="Rv1">Lorem ipsum dolo</div>
+                          <div className="Rv1">Good pricees, yummy food and perfect</div>
                           <div className="Rv2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit “
+                            “Good pricees, yummy food and perfect presentation of dishes, also for shisha lovers it's good fruitful flavor.“
                           </div>
                           <div className="ReviewAddress">
                             <div className="Rname text-uppercase">
-                              Ali Mohammad
+                            Firas Altaweel
                             </div>
                             <div className="RLocation text-uppercase">
                               Dubai
@@ -160,18 +150,13 @@ At Sul Me  our passion is not only to serve exquisite dishes but to create unfor
                         viewport={{ once: true }}
                       >
                         <div className="ReviewItemBoxItem">
-                          <div className="Rv1">Lorem ipsum dolo</div>
+                          <div className="Rv1">Amazing place with fantastic</div>
                           <div className="Rv2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit “
+                            “Amazing place with fantastic and variate cuisine! Great and friendly staff!  Highly reccomend! Once visited definitely you will cone again and again! “
                           </div>
                           <div className="ReviewAddress">
                             <div className="Rname text-uppercase">
-                              Ali Mohammad
+                            Mr. K
                             </div>
                             <div className="RLocation text-uppercase">
                               Dubai
@@ -187,18 +172,14 @@ At Sul Me  our passion is not only to serve exquisite dishes but to create unfor
                         viewport={{ once: true }}
                       >
                         <div className="ReviewItemBoxItem">
-                          <div className="Rv1">Lorem ipsum dolo</div>
+                          <div className="Rv1">Good for business meetings</div>
                           <div className="Rv2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit “
+                            “They renovated the place it looks amazing now and the service is amazing.
+Good for business meetings“
                           </div>
                           <div className="ReviewAddress">
                             <div className="Rname text-uppercase">
-                              Ali Mohammad
+                            Roy Saloum
                             </div>
                             <div className="RLocation text-uppercase">
                               Dubai
@@ -214,18 +195,13 @@ At Sul Me  our passion is not only to serve exquisite dishes but to create unfor
                         viewport={{ once: true }}
                       >
                         <div className="ReviewItemBoxItem">
-                          <div className="Rv1">Lorem ipsum dolo</div>
+                          <div className="Rv1">This is one of our family's..</div>
                           <div className="Rv2">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit “
+                            “This is one of our family's regular spot for a shisha. We like it very much and the staff are also very good.“
                           </div>
                           <div className="ReviewAddress">
                             <div className="Rname text-uppercase">
-                              Ali Mohammad
+                            Sadeesh Sadagopan
                             </div>
                             <div className="RLocation text-uppercase">
                               Dubai

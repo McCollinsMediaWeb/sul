@@ -37,20 +37,20 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <a href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services">
                 <div class="icon">
                   <div className="FtrIconH whatsapp">&nbsp;</div>
                 </div>
                 <div class="text">WhatsApp</div>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href={"/"}>
+              <a href="tel:+971565518844">
                 <div class="icon">
                   <div className="FtrIconH call">&nbsp;</div>
                 </div>
                 <div class="text">Call Us</div>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -108,23 +108,21 @@ const Footer = () => {
             <div className="col-md-4">
               <div className="FtrT1 text-uppercase">connect With Us</div>
               <div class="FooterDesc">
-                Taking care of the planet is a core SUL Me Principle. Our
-                packaging is eco-friendly, our herbs are homegrown, and our
-                commitment is lasting.
+              Follow us for mouthwatering food photos, special offers, and a taste of our vibrant dining experience
               </div>
               <div className="SocialBoxWrp">
                 <div className="socialItems">
                   <div className="SocialItem">
-                    <a href="#" target="_blank">
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                       <span className="Icon instagram">&nbsp;</span>
                     </a>
                   </div>
                   <div className="SocialItem">
-                    <a href="#" target="_blank">
+                    <a href="https://www.facebook.com/Sulme.uae/" target="_blank">
                       <span className="Icon facebook">&nbsp;</span>
                     </a>
                   </div>
-                  <div className="SocialItem">
+                  {/* <div className="SocialItem">
                     <a href="#" target="_blank">
                       <span className="Icon twitter">&nbsp;</span>
                     </a>
@@ -133,9 +131,9 @@ const Footer = () => {
                     <a href="#" target="_blank">
                       <span className="Icon youtube">&nbsp;</span>
                     </a>
-                  </div>
+                  </div> */}
                   <div className="SocialItem">
-                    <a href="#" target="_blank">
+                    <a href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services" target="_blank">
                       <span className="Icon whatsapp">&nbsp;</span>
                     </a>
                   </div>

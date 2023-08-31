@@ -89,8 +89,8 @@ const HomeMenu = () => {
                                 </div>
                               </div>
                               <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
+                                <Link href={"/reservation"} className="AddToCartAction">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -128,8 +128,8 @@ const HomeMenu = () => {
                                 </div>
                               </div>
                               <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
+                                <Link href={"/reservation"} className="AddToCartAction">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -167,8 +167,8 @@ const HomeMenu = () => {
                                 </div>
                               </div>
                               <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
+                                <Link href={"/reservation"} className="AddToCartAction">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -206,8 +206,8 @@ const HomeMenu = () => {
                                 </div>
                               </div>
                               <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
+                                <Link href={"/reservation"} className="AddToCartAction">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -245,8 +245,8 @@ const HomeMenu = () => {
                                 </div>
                               </div>
                               <div className="PBottomCR">
-                                <Link href={"/"} className="AddToCartAction">
-                                  View Menu
+                                <Link href={"/reservation"} className="AddToCartAction">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -258,7 +258,7 @@ const HomeMenu = () => {
                 </div>
               </Slider>
               <div class="MobCenter">
-              <Link class="T7" href={"/menu"}>Explore More</Link>
+              <Link class="T7" href={"/menu"}>View Menu</Link>
               </div>
             </div>
           </div>

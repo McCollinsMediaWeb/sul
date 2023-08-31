@@ -98,8 +98,8 @@ const HomeCusience = () => {
                                   ON FIRST ORDER
                                 </div> */}
                                 <div className="PTxt3 color-fff">65 AED</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                  Order Now
+                                <Link href={"/reservation"} className="AddToCartAction1">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -134,8 +134,8 @@ const HomeCusience = () => {
                                   ON FIRST ORDER
                                 </div> */}
                                 <div className="PTxt3 color-fff">65 AED</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                Order Now
+                                <Link href={"/reservation"} className="AddToCartAction1">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -170,8 +170,8 @@ const HomeCusience = () => {
                                   ON FIRST ORDER
                                 </div> */}
                                 <div className="PTxt3 color-fff">65 AED</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                Order Now
+                                <Link href={"/reservation"} className="AddToCartAction1">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>
@@ -206,8 +206,8 @@ const HomeCusience = () => {
                                 Tunisian Breakfast
                                 </div> */}
                                 <div className="PTxt3 color-fff">65 AED</div>
-                                <Link href={"/"} className="AddToCartAction1">
-                                Order Now
+                                <Link href={"/reservation"} className="AddToCartAction1">
+                                  Reserve Now
                                 </Link>
                               </div>
                             </div>

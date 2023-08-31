@@ -58,7 +58,7 @@ const InstagramComponent = () => {
                 </div>
                 <div className="col-md-8">
                     <div className="InstaT3 color-fff">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Follow us for mouthwatering food photos, special offers, and a taste of our vibrant dining experience 
                     </div>
                 </div>
             </div>
@@ -80,6 +80,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i1.jpg"
                         layout="responsive"
@@ -88,6 +89,8 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
+                    </a>
+                    
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -96,6 +99,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                     <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i2.jpg"
                         layout="responsive"
@@ -104,6 +108,7 @@ const InstagramComponent = () => {
                         className="ProductImage"
                       />
                       <span className="WaterMark1">&nbsp;</span>
+                      </a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -112,6 +117,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i3.jpg"
                         layout="responsive"
@@ -119,7 +125,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -128,6 +134,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i4.jpg"
                         layout="responsive"
@@ -135,7 +142,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -144,6 +151,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i1.jpg"
                         layout="responsive"
@@ -151,7 +159,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -160,6 +168,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i2.jpg"
                         layout="responsive"
@@ -167,7 +176,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -176,6 +185,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i3.jpg"
                         layout="responsive"
@@ -183,7 +193,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
                 <div className="InstaSliderItem position-relative">
@@ -192,6 +202,7 @@ const InstagramComponent = () => {
                     {...animation}
                     viewport={{ once: true}}
                   >
+                    <a href="https://www.instagram.com/sulmeae/" target="_blank">
                     <Image
                         src="/i4.jpg"
                         layout="responsive"
@@ -199,7 +210,7 @@ const InstagramComponent = () => {
                         height={"449"}
                         className="ProductImage"
                       />
-                      <span className="WaterMark1">&nbsp;</span>
+                      <span className="WaterMark1">&nbsp;</span></a>
                   </div>
                 </div>
               </Slider>
