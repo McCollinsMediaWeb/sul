@@ -7,23 +7,23 @@ const MapBox = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <div>
-        <a href="#" target="_blank">
+        <a href="https://goo.gl/maps/mvDnCnAZPvFiKg7b9" target="_blank">
         {isDesktop && (
            <Image
-           src="/map.jpg"
+           src="/map2.jpg"
            layout="responsive"
-           width={"1920"}
-           height={"771"}
+           width={"1702"}
+           height={"673"}
            priority={true}
            className="HdLogo"
          />
         )}
         {!isDesktop && (
            <Image
-           src="/mapmobile.jpg"
+           src="/map2mobile.jpg"
            layout="responsive"
-           width={"666"}
-           height={"771"}
+           width={"468"}
+           height={"673"}
            priority={true}
            className="HdLogo"
          />

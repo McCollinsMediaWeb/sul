@@ -1095,7 +1095,7 @@ footer .socialItems .SocialItem:hover {
   font-weight: 500;
   display: inline-block;
   border-radius: 30px;
-  min-width: 165px;
+  min-width: 185px;
   text-align: center;
   margin-top: 10px;
 }
