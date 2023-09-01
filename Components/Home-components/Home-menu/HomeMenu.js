@@ -88,11 +88,11 @@ const HomeMenu = () => {
                                   <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
-                              <div className="PBottomCR">
+                              {/* <div className="PBottomCR">
                                 <Link href={"/reservation"} className="AddToCartAction">
                                   Reserve Now
                                 </Link>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -127,11 +127,11 @@ const HomeMenu = () => {
                                   <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
-                              <div className="PBottomCR">
+                              {/* <div className="PBottomCR">
                                 <Link href={"/reservation"} className="AddToCartAction">
                                   Reserve Now
                                 </Link>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -166,11 +166,11 @@ const HomeMenu = () => {
                                   <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
-                              <div className="PBottomCR">
+                              {/* <div className="PBottomCR">
                                 <Link href={"/reservation"} className="AddToCartAction">
                                   Reserve Now
                                 </Link>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -205,11 +205,11 @@ const HomeMenu = () => {
                                   <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
-                              <div className="PBottomCR">
+                              {/* <div className="PBottomCR">
                                 <Link href={"/reservation"} className="AddToCartAction">
                                   Reserve Now
                                 </Link>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -244,11 +244,11 @@ const HomeMenu = () => {
                                   <div class="PrdPrice">Price in  AED</div>
                                 </div>
                               </div>
-                              <div className="PBottomCR">
+                              {/* <div className="PBottomCR">
                                 <Link href={"/reservation"} className="AddToCartAction">
                                   Reserve Now
                                 </Link>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
