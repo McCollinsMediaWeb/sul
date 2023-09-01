@@ -18,8 +18,6 @@ const theme = createTheme({
   },
 });
 
-
-
 const ReservTable1 = () => {
   const color = "#fff";
   const [age, setAge] = React.useState("");
@@ -39,6 +37,34 @@ const ReservTable1 = () => {
   const handleChange = (event) => {
     setAge(event.target.value);
   };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Extract form data here and format it as needed
+    const formData = new FormData(event.target);
+
+    // Send the data to the Google Apps Script
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbxFtERQUcAVHy4dJ87MeDfFiseDsOHJ_Ma5Wg0ruGSTP8M-WLPOp0LzKTNaaU5KpPnMqw/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    // Handle the response if needed
+    if (response.ok) {
+      // Successful submission
+      console.log("Form submitted successfully");
+      alert("form submitted successfully");
+      event.target.reset();
+      // Reset the form or perform other actions
+    } else {
+      // Handle errors
+      console.error("Form submission failed");
+    }
+  };
   return (
     <div className="pd-common ContactRow2">
       <div className="container">
@@ -52,86 +78,14 @@ const ReservTable1 = () => {
           </div>
           <div className="contactFormR1">
             <ThemeProvider theme={theme}>
-              <div className="row">
-                <div className="col-md-6">
-                  <TextField
-                    label="Name"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <TextField
-                    label="Phone Number"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <TextField
-                    label="Email"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <div className="form-control-1">
-                    <FormControl fullWidth size={inputSize}>
-                      <InputLabel
-                        id="demo-simple-select-label"
-                        sx={{
-                          svg: { color },
-                          input: { color },
-                          label: { color },
-                          borderColor: { color },
-                        }}
-                      >
-                        Select Pax
-                      </InputLabel>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Select Pax"
-                        onChange={handleChange}
-                        sx={{
-                          svg: { color },
-                          input: { color },
-                          label: { color },
-                          borderColor: { color },
-                        }}
-                      >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                      </Select>
-                    </FormControl>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-control-1">
-                    <DatePicker
+              <form onSubmit={handleSubmit}>
+                <div className="row">
+                  <div className="col-md-6">
+                    <TextField
+                      label="Name"
                       fullWidth
-                      slotProps={{ textField: { size: inputSize } }}
-                      label="Date"
+                      size={inputSize}
+                      name="Name"
                       sx={{
                         svg: { color },
                         input: { color },
@@ -140,13 +94,12 @@ const ReservTable1 = () => {
                       }}
                     />
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-control-1">
-                    <MobileTimePicker
+                  <div className="col-md-6">
+                    <TextField
+                      label="Phone Number"
                       fullWidth
-                      label="Time"
-                      slotProps={{ textField: { size: inputSize } }}
+                      size={inputSize}
+                      name="Phone"
                       sx={{
                         svg: { color },
                         input: { color },
@@ -155,11 +108,106 @@ const ReservTable1 = () => {
                       }}
                     />
                   </div>
+                  <div className="col-md-6">
+                    <TextField
+                      label="Email"
+                      fullWidth
+                      size={inputSize}
+                      name="Email"
+                      sx={{
+                        svg: { color },
+                        input: { color },
+                        label: { color },
+                        borderColor: { color },
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-control-1">
+                      <FormControl fullWidth size={inputSize}>
+                        <InputLabel
+                          id="demo-simple-select-label"
+                          sx={{
+                            svg: { color },
+                            input: { color },
+                            label: { color },
+                            borderColor: { color },
+                          }}
+                        >
+                          Number of Guest
+                        </InputLabel>
+                        <Select
+                          labelId="demo-simple-select-label"
+                          id="demo-simple-select"
+                          value={age}
+                          label="Number of Guest"
+                          name="Pax"
+                          onChange={handleChange}
+                          sx={{
+                            svg: { color },
+                            input: { color },
+                            label: { color },
+                            borderColor: { color },
+                          }}
+                        >
+                          <MenuItem value={1}>1</MenuItem>
+                          <MenuItem value={2}>2</MenuItem>
+                          <MenuItem value={3}>3</MenuItem>
+                          <MenuItem value={4}>4</MenuItem>
+                          <MenuItem value={5}>5</MenuItem>
+                          <MenuItem value={6}>6</MenuItem>
+                          <MenuItem value={7}>7</MenuItem>
+                          <MenuItem value={8}>8</MenuItem>
+                          <MenuItem value={9}>9</MenuItem>
+                          <MenuItem value={10}>10</MenuItem>
+                          <MenuItem value={"10+"}>10+</MenuItem>
+                        </Select>
+                      </FormControl>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-control-1">
+                      <DatePicker
+                        fullWidth
+                        slotProps={{
+                          textField: { size: inputSize, name: "ResDate" },
+                        }}
+                        label="Date"
+                        className="cstDateDiv"
+                        sx={{
+                          svg: { color },
+                          input: { color },
+                          label: { color },
+                          borderColor: { color },
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-control-1">
+                      <MobileTimePicker
+                        fullWidth
+                        label="Time"
+                        slotProps={{
+                          textField: { size: inputSize, name: "Time" },
+                        }}
+                        className="cstTimeDiv"
+                        sx={{
+                          svg: { color },
+                          input: { color },
+                          label: { color },
+                          borderColor: { color },
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="text-center">
-                <button class="T7">Submit Form</button>
-              </div>
+                <div className="text-center">
+                  <button class="T7" type="submit">
+                    Submit Form
+                  </button>
+                </div>
+              </form>
             </ThemeProvider>
           </div>
         </div>

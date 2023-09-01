@@ -36,6 +36,34 @@ const ContactRow2 = () => {
       fontFamily: ["Poppins", "sans-serif"],
     },
   });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Extract form data here and format it as needed
+    const formData = new FormData(event.target);
+
+    // Send the data to the Google Apps Script
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbz47wFvHXhWjMlhuhVebqCuYjcB3Oi7dc-miGbj42rsb0rcoeBmXcSMMrWRn2YWHh8o/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    // Handle the response if needed
+    if (response.ok) {
+      // Successful submission
+      console.log("Form submitted successfully");
+      alert("form submitted successfully");
+      // Reset the form or perform other actions
+    } else {
+      // Handle errors
+      console.error("Form submission failed");
+    }
+  };
+
   return (
     <div className="pd-common ContactRow2">
       <div className="container">
@@ -49,91 +77,72 @@ const ContactRow2 = () => {
           </div>
           <div className="contactFormR1">
             <ThemeProvider theme={theme}>
-              <div className="row">
-                <div className="col-md-6">
-                  <TextField
-                    label="Name"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <TextField
-                    label="Phone Number"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <TextField
-                    label="Email"
-                    fullWidth
-                    size={inputSize}
-                    sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <FormControl fullWidth size={inputSize}>
-                    <InputLabel
-                      id="demo-simple-select-label"
+              <form onSubmit={handleSubmit}>
+                <div className="row">
+                  <div className="col-md-12">
+                    <TextField
+                      label="Name"
+                      fullWidth
+                      name="Name"
+                      size={inputSize}
                       sx={{
                         svg: { color },
                         input: { color },
                         label: { color },
                         borderColor: { color },
                       }}
-                    >
-                      Select Pax
-                    </InputLabel>
-                    <Select
-                      labelId="demo-simple-select-label"
-                      id="demo-simple-select"
-                      value={age}
-                      label="Select Pax"
-                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <TextField
+                      label="Phone Number"
+                      fullWidth
+                      name="Phone"
+                      size={inputSize}
                       sx={{
                         svg: { color },
                         input: { color },
                         label: { color },
                         borderColor: { color },
                       }}
-                    >
-                      <MenuItem value={10}>Ten</MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={30}>Thirty</MenuItem>
-                    </Select>
-                  </FormControl>
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <TextField
+                      label="Email"
+                      fullWidth
+                      name="Email"
+                      size={inputSize}
+                      sx={{
+                        svg: { color },
+                        input: { color },
+                        label: { color },
+                        borderColor: { color },
+                      }}
+                    />
+                  </div>
+
+                  <div className="col-md-12">
+                    <TextareaAutosize
+                      placeholder="Aditional Comments , if you have"
+                      minRows={3}
+                      fullWidth
+                      name="Message"
+                      sx={{
+                        svg: { color },
+                        input: { color },
+                        label: { color },
+                        borderColor: { color },
+                      }}
+                    />
+                  </div>
                 </div>
-                <div className="col-md-12">
-                <TextareaAutosize placeholder="Aditional Comments , if you have" minRows={3} fullWidth sx={{
-                      svg: { color },
-                      input: { color },
-                      label: { color },
-                      borderColor: { color },
-                    }}/>
+                <div className="text-center">
+                  <button class="T7" type="submit">
+                    Submit Form
+                  </button>
                 </div>
-                
-              </div>
-              <div className="text-center">
-                    <button class="T7">Submit Form</button>
-                </div>
+              </form>
             </ThemeProvider>
           </div>
         </div>

@@ -74,12 +74,12 @@ const Header = () => {
                 >
                   About Us
                 </Link>
-                <Link
+                {/* <Link
                   href={"/menu"}
                   className={router.pathname == "/menu" ? "active" : ""}
                 >
                   Menu
-                </Link>
+                </Link> */}
                 <Link
                   href={"/gallery"}
                   className={router.pathname == "/gallery" ? "active" : ""}
@@ -109,14 +109,25 @@ const Header = () => {
             <div className="MainHeadrR">
               <div className="ThumbBox">
                 <div className="ThumbBoxL">
-                  <a href="https://www.talabat.com/uae/sul-me-restaurant-llc" target="_blank">Order Now</a>
+                  <a
+                    href="https://www.talabat.com/uae/sul-me-restaurant-llc"
+                    target="_blank"
+                  >
+                    Order Now
+                  </a>
                 </div>
                 <div className="ThumbBoxR">
                   <div class="QuickActionIcons">
-                    <a href="https://goo.gl/maps/kYd19Pmdzu68CztL8" target="_blank">
+                    <a
+                      href="https://goo.gl/maps/kYd19Pmdzu68CztL8"
+                      target="_blank"
+                    >
                       <span class="QLocation">&nbsp;</span>
                     </a>
-                    <a href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services" target="_blank">
+                    <a
+                      href="https://wa.me/+971565518844?text=Hi%20there%20%2C%0AI%20would%20like%20to%20know%20more%20about%20sul%20products%20and%20services"
+                      target="_blank"
+                    >
                       <span class="QAccount">&nbsp;</span>
                     </a>
                     <a href="javascript:void(0);" onClick={() => setOpen(true)}>
@@ -148,35 +159,68 @@ const Header = () => {
                   </div>
                   <div className="SideNavMiddle">
                     <div className="SideNavLinks">
-                    <div onClick={() => setOpen(false)}>
-                        <Link href={"/"} className={router.pathname == "/" ? "hover1 active" : "hover1"}>
+                      <div onClick={() => setOpen(false)}>
+                        <Link
+                          href={"/"}
+                          className={
+                            router.pathname == "/" ? "hover1 active" : "hover1"
+                          }
+                        >
                           Home
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/about"} className={router.pathname == "/about" ? "hover1 active" : "hover1"}>
+                        <Link
+                          href={"/about"}
+                          className={
+                            router.pathname == "/about"
+                              ? "hover1 active"
+                              : "hover1"
+                          }
+                        >
                           About Us
                         </Link>
                       </div>
-                      <div onClick={() => setOpen(false)}>
+                      {/* <div onClick={() => setOpen(false)}>
                         {" "}
                         <Link href={"/menu"}  className={router.pathname == "/menu" ? "hover1 active" : "hover1"}>
                           Menu
                         </Link>
-                      </div>
+                      </div> */}
                       <div onClick={() => setOpen(false)}>
                         {" "}
-                        <Link href={"/gallery"}  className={router.pathname == "/gallery" ? "hover1 active" : "hover1"}>
+                        <Link
+                          href={"/gallery"}
+                          className={
+                            router.pathname == "/gallery"
+                              ? "hover1 active"
+                              : "hover1"
+                          }
+                        >
                           Gallery
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/reservation"}  className={router.pathname == "/reservation" ? "hover1 active" : "hover1"}>
+                        <Link
+                          href={"/reservation"}
+                          className={
+                            router.pathname == "/reservation"
+                              ? "hover1 active"
+                              : "hover1"
+                          }
+                        >
                           Reservations
                         </Link>
                       </div>
                       <div onClick={() => setOpen(false)}>
-                        <Link href={"/contact"}  className={router.pathname == "/contact" ? "hover1 active" : "hover1"}>
+                        <Link
+                          href={"/contact"}
+                          className={
+                            router.pathname == "/contact"
+                              ? "hover1 active"
+                              : "hover1"
+                          }
+                        >
                           Contact Us
                         </Link>
                       </div>
@@ -188,47 +232,54 @@ const Header = () => {
                       <div>
                         <div className="row HdrRow1">
                           <div className="col-md-4">
-                          <Image
-                        src="/i1.jpg"
-                        layout="responsive"
-                        width={"400"}
-                        height={"449"}
-                        className=""
-                      />
+                            <Image
+                              src="/i1.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
                           </div>
                           <div className="col-md-4">
-                          <Image
-                        src="/i2.jpg"
-                        layout="responsive"
-                        width={"400"}
-                        height={"449"}
-                        className=""
-                      />
+                            <Image
+                              src="/i2.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
                           </div>
                           <div className="col-md-4">
-                          <Image
-                        src="/i3.jpg"
-                        layout="responsive"
-                        width={"400"}
-                        height={"449"}
-                        className=""
-                      />
+                            <Image
+                              src="/i3.jpg"
+                              layout="responsive"
+                              width={"400"}
+                              height={"449"}
+                              className=""
+                            />
                           </div>
                         </div>
                         <div className="T4">
-                        Follow us for mouthwatering food photos, special offers, and a taste of our vibrant dining experience
+                          Follow us for mouthwatering food photos, special
+                          offers, and a taste of our vibrant dining experience
                         </div>
                       </div>
                     )}
                     <div className="SocialBoxWrp">
                       <div className="socialItems">
                         <div className="SocialItem">
-                          <a href="https://www.instagram.com/sulmeae/" target="_blank">
+                          <a
+                            href="https://www.instagram.com/sulmeae/"
+                            target="_blank"
+                          >
                             <span className="Icon instagram">&nbsp;</span>
                           </a>
                         </div>
                         <div className="SocialItem">
-                          <a href="https://www.facebook.com/Sulme.uae/" target="_blank">
+                          <a
+                            href="https://www.facebook.com/Sulme.uae/"
+                            target="_blank"
+                          >
                             <span className="Icon facebook">&nbsp;</span>
                           </a>
                         </div>
@@ -256,8 +307,6 @@ const Header = () => {
           </div>
         )}
       </div>
-
-     
     </header>
   );
 };

@@ -8,6 +8,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 const GalleryBox = () => {
+  const [selectedCat, setSelectedCat] = useState("Out Door");
   const animation = {
     variants: {
       hidden: { opacity: 0 },
@@ -46,33 +47,32 @@ const GalleryBox = () => {
   return (
     <div className="ReviewBox pd-common GalleryBox PdArg1 GalleryMenuBg2">
       <Lightbox
-          open={open}
-          close={() => setOpen(false)}
-          plugins={[Thumbnails]}
-          slides={[
-            { src: "/menu/g1.jpg" },
-            { src: "/menu/g2.jpg" },
-            { src: "/menu/g3.jpg" },
-            { src: "/menu/g4.jpg" },
-            { src: "/menu/g5.jpg" },
-            { src: "/menu/g6.jpg" },
-            { src: "/menu/g7.jpg" },
-            { src: "/menu/g8.jpg" },
-            { src: "/menu/g9.jpg" },
-            { src: "/menu/g10.jpg" },
-            { src: "/menu/g11.jpg" },
-            { src: "/menu/g12.jpg" },
-            { src: "/menu/g13.jpg" },
-            { src: "/menu/g14.jpg" },
-            { src: "/menu/g15.jpg" },
-            { src: "/menu/g16.jpg" },
-            { src: "/menu/g17.jpg" },
-            { src: "/menu/g18.jpg" },
-            { src: "/menu/g19.jpg" },
-            { src: "/menu/g20.jpg" },
-
-          ]}
-        />
+        open={open}
+        close={() => setOpen(false)}
+        plugins={[Thumbnails]}
+        slides={[
+          { src: "/menu/g1.jpg" },
+          { src: "/menu/g2.jpg" },
+          { src: "/menu/g3.jpg" },
+          { src: "/menu/g4.jpg" },
+          { src: "/menu/g5.jpg" },
+          { src: "/menu/g6.jpg" },
+          { src: "/menu/g7.jpg" },
+          { src: "/menu/g8.jpg" },
+          { src: "/menu/g9.jpg" },
+          { src: "/menu/g10.jpg" },
+          { src: "/menu/g11.jpg" },
+          { src: "/menu/g12.jpg" },
+          { src: "/menu/g13.jpg" },
+          { src: "/menu/g14.jpg" },
+          { src: "/menu/g15.jpg" },
+          { src: "/menu/g16.jpg" },
+          { src: "/menu/g17.jpg" },
+          { src: "/menu/g18.jpg" },
+          { src: "/menu/g19.jpg" },
+          { src: "/menu/g20.jpg" },
+        ]}
+      />
       <div className="container">
         <div className="ReviewBoxHdr">
           <div
@@ -92,7 +92,8 @@ const GalleryBox = () => {
               </div>
               <div className="col-md-8">
                 <div className="RT1">
-                Embark on a virtual culinary adventure as we unveil the essence of Middle Eastern cuisine like never before
+                  Embark on a virtual culinary adventure as we unveil the
+                  essence of Middle Eastern cuisine like never before
                 </div>
                 <div className="RT2">Food Lovers Showcase</div>
               </div>
@@ -125,7 +126,12 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem active">
+                        <div
+                          className={`ReviewItemBoxItem ${
+                            selectedCat === "Out Door" && "active"
+                          }`}
+                          onClick={() => setSelectedCat("Out Door")}
+                        >
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/g1.jpg"
@@ -145,7 +151,12 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem">
+                        <div
+                          className={`ReviewItemBoxItem ${
+                            selectedCat === "Indoor Photos" && "active"
+                          }`}
+                          onClick={() => setSelectedCat("Indoor Photos")}
+                        >
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/g2.jpg"
@@ -165,7 +176,12 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem">
+                        <div
+                          className={`ReviewItemBoxItem ${
+                            selectedCat === "Our Salads" && "active"
+                          }`}
+                          onClick={() => setSelectedCat("Our Salads")}
+                        >
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/g3.jpg"
@@ -185,7 +201,12 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem">
+                        <div
+                          className={`ReviewItemBoxItem ${
+                            selectedCat === "Our Starters" && "active"
+                          }`}
+                          onClick={() => setSelectedCat("Our Starters")}
+                        >
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/g4.jpg"
@@ -205,110 +226,15 @@ const GalleryBox = () => {
                         {...animation}
                         viewport={{ once: true }}
                       >
-                        <div className="ReviewItemBoxItem">
+                        <div
+                          className={`ReviewItemBoxItem ${
+                            selectedCat === "Desserts" && "active"
+                          }`}
+                          onClick={() => setSelectedCat("Desserts")}
+                        >
                           <div className="GalleryItem1">
                             <Image
                               src="/menu/g5.jpg"
-                              layout="responsive"
-                              width={"411"}
-                              height={"449"}
-                              className="GalleryItemImage"
-                            />
-                          </div>
-                          <div className="GalleryItemName">Desserts</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="ReviewItemBox">
-                      <div
-                        className="SliderWrt1"
-                        {...animation}
-                        viewport={{ once: true }}
-                      >
-                        <div className="ReviewItemBoxItem">
-                          <div className="GalleryItem1">
-                            <Image
-                              src="/menu/g6.jpg"
-                              layout="responsive"
-                              width={"411"}
-                              height={"449"}
-                              className="GalleryItemImage"
-                            />
-                          </div>
-                          <div className="GalleryItemName">Out Door</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="ReviewItemBox">
-                      <div
-                        className="SliderWrt1"
-                        {...animation}
-                        viewport={{ once: true }}
-                      >
-                        <div className="ReviewItemBoxItem">
-                          <div className="GalleryItem1">
-                            <Image
-                              src="/menu/g7.jpg"
-                              layout="responsive"
-                              width={"411"}
-                              height={"449"}
-                              className="GalleryItemImage"
-                            />
-                          </div>
-                          <div className="GalleryItemName">Indoor Photos</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="ReviewItemBox">
-                      <div
-                        className="SliderWrt1"
-                        {...animation}
-                        viewport={{ once: true }}
-                      >
-                        <div className="ReviewItemBoxItem">
-                          <div className="GalleryItem1">
-                            <Image
-                              src="/menu/g8.jpg"
-                              layout="responsive"
-                              width={"411"}
-                              height={"449"}
-                              className="GalleryItemImage"
-                            />
-                          </div>
-                          <div className="GalleryItemName">Our Salads</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="ReviewItemBox">
-                      <div
-                        className="SliderWrt1"
-                        {...animation}
-                        viewport={{ once: true }}
-                      >
-                        <div className="ReviewItemBoxItem">
-                          <div className="GalleryItem1">
-                            <Image
-                              src="/menu/g9.jpg"
-                              layout="responsive"
-                              width={"411"}
-                              height={"449"}
-                              className="GalleryItemImage"
-                            />
-                          </div>
-                          <div className="GalleryItemName">Our Starters</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="ReviewItemBox">
-                      <div
-                        className="SliderWrt1"
-                        {...animation}
-                        viewport={{ once: true }}
-                      >
-                        <div className="ReviewItemBoxItem">
-                          <div className="GalleryItem1">
-                            <Image
-                              src="/menu/g10.jpg"
                               layout="responsive"
                               width={"411"}
                               height={"449"}
@@ -326,7 +252,7 @@ const GalleryBox = () => {
           </div>
           <div className="GalleryImages">
             <div className="row">
-              <div className="col-md-3"  onClick={() => setOpen(true)}>
+              <div className="col-md-3" onClick={() => setOpen(true)}>
                 <div
                   className="SliderWrt1"
                   {...animation}
