@@ -53,18 +53,7 @@ const SulMissions = () => {
                   <span>Our Mission</span>
                 </div>
                 <div className="T6 color-fff">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor consectetur adipiscing elit, sed do
-                  eiusmod tempor incidition ullam. tempor incidition ullamco
-                  laboris nisi ut aliquip ex ea commodo condor
-                </div>
-                <div className="T6 color-fff">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                  ex ea commodo condor consectetur adipiscing elit, sed do
-                  eiusmod tempor incidition ullam. tempor incidition ullamco
-                  laboris nisi ut aliquip ex ea commodo condor
+                At Sul Me, our mission is to take you on an unforgettable culinary journey through the heart of the Middle East. We are more than just a restaurant; we are an experience that transports you to the rich and diverse flavors of the region. Our goal is to provide our customers with an immersive and memorable Middle Eastern culinary adventure that leaves a lasting impression.
                 </div>
               </div>
             </div>
