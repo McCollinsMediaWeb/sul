@@ -81,12 +81,12 @@ const Header = () => {
                 >
                   Menu
                 </a>
-                <Link
+                {/* <Link
                   href={"/gallery"}
                   className={router.pathname == "/gallery" ? "active" : ""}
                 >
                   Gallery
-                </Link>
+                </Link> */}
                 <Link
                   href={"/reviews"}
                   className={router.pathname == "/reviews" ? "active" : ""}
@@ -188,7 +188,7 @@ const Header = () => {
                           Menu
                         </a>
                       </div>
-                      <div onClick={() => setOpen(false)}>
+                      {/* <div onClick={() => setOpen(false)}>
                         {" "}
                         <Link
                           href={"/gallery"}
@@ -200,7 +200,7 @@ const Header = () => {
                         >
                           Gallery
                         </Link>
-                      </div>
+                      </div> */}
                       <div onClick={() => setOpen(false)}>
                         <Link
                           href={"/reservation"}

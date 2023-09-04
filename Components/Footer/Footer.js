@@ -110,7 +110,7 @@ const Footer = () => {
                         Customer Reviews
                       </Link>
                       <Link href={"/"} className="FtrLink1 hover2">
-                        Gallery
+                        Home
                       </Link>
                     </div>
                   </div>
