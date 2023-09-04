@@ -74,12 +74,13 @@ const Header = () => {
                 >
                   About Us
                 </Link>
-                {/* <Link
-                  href={"/menu"}
+                <a
+                  href="/sulme-menu-card.pdf"
+                  target="_blank"
                   className={router.pathname == "/menu" ? "active" : ""}
                 >
                   Menu
-                </Link> */}
+                </a>
                 <Link
                   href={"/gallery"}
                   className={router.pathname == "/gallery" ? "active" : ""}
@@ -181,12 +182,12 @@ const Header = () => {
                           About Us
                         </Link>
                       </div>
-                      {/* <div onClick={() => setOpen(false)}>
+                      <div>
                         {" "}
-                        <Link href={"/menu"}  className={router.pathname == "/menu" ? "hover1 active" : "hover1"}>
+                        <a href="/sulme-menu-card.pdf" target="_blank"  className={router.pathname == "/menu" ? "hover1 active" : "hover1"}>
                           Menu
-                        </Link>
-                      </div> */}
+                        </a>
+                      </div>
                       <div onClick={() => setOpen(false)}>
                         {" "}
                         <Link

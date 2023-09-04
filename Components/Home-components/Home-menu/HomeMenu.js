@@ -258,7 +258,7 @@ const HomeMenu = () => {
                 </div>
               </Slider>
               <div class="MobCenter">
-              <Link class="T7" href={"/menu"}>View Menu</Link>
+              <a class="T7" href="/sulme-menu-card.pdf" target="_blank">View Menu</a>
               </div>
             </div>
           </div>

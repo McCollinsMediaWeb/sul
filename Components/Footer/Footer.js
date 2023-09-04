@@ -85,9 +85,9 @@ const Footer = () => {
                       <Link href={"/about"} className="FtrLink1 hover2">
                         About Us
                       </Link>
-                      {/* <Link href={"/menu"} className="FtrLink1 hover2">
+                      <a href="/sulme-menu-card.pdf" className="FtrLink1 hover2" target="_blank">
                         Menu
-                      </Link> */}
+                      </a>
                       <Link href={"/gallery"} className="FtrLink1 hover2">
                         Gallery
                       </Link>
