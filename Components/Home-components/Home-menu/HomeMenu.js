@@ -84,8 +84,8 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Product Name</div>
-                                  <div class="PrdPrice">Price in  AED</div>
+                                  <div class="PrdName">Penne Pasta</div>
+                                  {/* <div class="PrdPrice">Price in  AED</div> */}
                                 </div>
                               </div>
                               {/* <div className="PBottomCR">
@@ -123,8 +123,9 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Product Name</div>
-                                  <div class="PrdPrice">Price in  AED</div>
+                                  <div class="PrdName">Shawarma Plate
+</div>
+                                  {/* <div class="PrdPrice">Price in  AED</div> */}
                                 </div>
                               </div>
                               {/* <div className="PBottomCR">
@@ -162,8 +163,9 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Product Name</div>
-                                  <div class="PrdPrice">Price in  AED</div>
+                                  <div class="PrdName">Fattoush Salad
+</div>
+                                  {/* <div class="PrdPrice">Price in  AED</div> */}
                                 </div>
                               </div>
                               {/* <div className="PBottomCR">
@@ -201,8 +203,9 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Product Name</div>
-                                  <div class="PrdPrice">Price in  AED</div>
+                                  <div class="PrdName">Beef Filet Skewers
+</div>
+                                  {/* <div class="PrdPrice">Price in  AED</div> */}
                                 </div>
                               </div>
                               {/* <div className="PBottomCR">
@@ -240,8 +243,9 @@ const HomeMenu = () => {
                             <div className="PBottomC">
                               <div className="PBottomCL color-fff">
                                 <div>
-                                  <div class="PrdName">Product Name</div>
-                                  <div class="PrdPrice">Price in  AED</div>
+                                  <div class="PrdName">Khashpori ajrski
+</div>
+                                  {/* <div class="PrdPrice">Price in  AED</div> */}
                                 </div>
                               </div>
                               {/* <div className="PBottomCR">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 import { useRouter } from "next/router";
