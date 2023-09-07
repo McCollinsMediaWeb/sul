@@ -67,7 +67,7 @@ const HomeChef = () => {
                   className="HomeAbtImage MobileAbtImage"
                 />
                 )}
-                <div className="T10 color-fff">Hussain</div>
+                <div className="T10 color-fff">Hussain Zebuck</div>
                 <div className="T9 color-fff">
                 Prepare for a mouthwatering journey through a fusion of Middle Eastern cuisines and palestinian cuisines as expert Chef Hussein delights Dubai with his culinary expertise.  Experience the actual essence of Middle Eastern cuisine as it has been expertly created by a true gourmet.
                 </div>
