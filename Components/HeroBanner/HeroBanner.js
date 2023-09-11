@@ -83,7 +83,7 @@ const HeroBanner = (props) => {
       {!isDesktop && (
         <video
         ref={videoRef}
-        src="/mainbanner1.mp4"
+        src="/sul-mobile.mp4"
         width="100%"
         height="700"
         autoPlay
