@@ -2489,7 +2489,7 @@ font-size: 18px;
   }
   .FormFlex1{
     margin: 0 -3px;
-    margin-top: 20px;
+    margin-top: 15px;
     justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -2536,5 +2536,7 @@ font-size: 18px;
   .inHouse .Header1Txt {
     line-height: 1.2;
   }
-  
+  .FormStep1{
+    margin: 0 -10px;
+  }
 }
