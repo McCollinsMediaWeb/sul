@@ -10,6 +10,7 @@ import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 const CateringForm = (props) => {
+  console.log();
   const color = "#fff";
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
