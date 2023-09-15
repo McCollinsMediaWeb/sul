@@ -2495,6 +2495,11 @@ font-size: 18px;
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .FormFlex1::-webkit-scrollbar {
+    display: none;
   }
   .formBtn1{
     font-size: 15px;
