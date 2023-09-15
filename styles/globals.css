@@ -2488,7 +2488,7 @@ font-size: 18px;
     margin: 0;
   }
   .FormFlex1{
-    margin: 0 -5px;
+    margin: 0 -3px;
     margin-top: 20px;
     justify-content: center;
     flex-wrap: nowrap;
@@ -2497,13 +2497,14 @@ font-size: 18px;
     justify-content: start;
   }
   .formBtn1{
-    font-size: 14px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 18px 10px;
+    border-radius: 0;
   }
   .FormFlex1Item {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 5px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 3px;
     margin-bottom: 5px;
   }
   .CatSeForm {
@@ -2520,6 +2521,9 @@ font-size: 18px;
   }
   .PersonalizedServicesBox .cusienBoxHdr2{
     font-size: 15px;
+  }
+  .css-1w4btpj-MuiFormControl-root-MuiTextField-root label {
+    font-size: 13px !important;
   }
   
 }
