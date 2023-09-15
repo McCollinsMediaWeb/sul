@@ -2491,6 +2491,10 @@ font-size: 18px;
     margin: 0 -5px;
     margin-top: 20px;
     justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: start;
   }
   .formBtn1{
     font-size: 14px;
