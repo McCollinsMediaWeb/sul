@@ -189,7 +189,7 @@ const CateringForm = (props) => {
                             borderColor: { color },
                           }}
                         >
-                          Staff required *
+                          Staff Required *
                         </InputLabel>
                         <Select
                           labelId="demo-simple-select-label"
