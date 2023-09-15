@@ -42,7 +42,7 @@ const CateringForm = (props) => {
     <div className="pd-common ContactRow2 CatSeForm">
       <div className="container">
         <div className="text-center">
-          <div className="Ct11">Book your Catering Service for Breakfast</div>
+          <div className="Ct11">Book your Catering Service for {props.Title}</div>
           <div className="Ct22">
             Please complete the following details and we will respond to your
             enquiry within 24 hours. <br />
