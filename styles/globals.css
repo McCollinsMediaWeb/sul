@@ -2469,3 +2469,12 @@ font-size: 18px;
 .CatSeForm .row .col-md-12{
   margin-bottom: 0;
 }
+::-moz-selection {
+  color: #1D1D1B;
+  background: #EB6131;
+}
+
+::selection {
+  color: #1D1D1B;
+  background: #EB6131;
+}

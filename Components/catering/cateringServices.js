@@ -115,9 +115,11 @@ const CateringServices = () => {
           </div>
         </div>
       </div>
-      {ToggleState === 1 && <CateringForm desc="test 1" />}
-      {ToggleState === 1 && <CateringForm desc="test 1" />}
-    </div>
+      
+    {ToggleState === 1 && <CateringForm desc="test 1" />}
+    {ToggleState === 2 && <CateringForm desc="test 2" />}
+    
+   </div>
   );
 };
 
