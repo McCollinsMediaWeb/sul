@@ -2525,5 +2525,11 @@ font-size: 18px;
   .css-1w4btpj-MuiFormControl-root-MuiTextField-root label {
     font-size: 13px !important;
   }
+  .css-1w4btpj-MuiFormControl-root-MuiTextField-root input{
+    font-size: 14px !important;
+  }
+  .inHouse .Header1Txt {
+    line-height: 1.2;
+  }
   
 }
