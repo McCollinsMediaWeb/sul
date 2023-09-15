@@ -2365,3 +2365,107 @@ text-align: center;
     padding-bottom: 20px !important;
   }
 }
+
+.ImageBanner1 .BannerContent {
+  max-width: 700px;
+}
+.ImageBanner1 .BannerBtns a{
+min-width: 220px;
+}
+.PersonalizedServicesBox .container::after{
+content: none;
+}
+.PersonalizedServicesBox .cusienBoxHdr1{
+  line-height: 1;
+}
+.PersonalizedServicesBox .cusienBoxHdr2 {
+  line-height: 1.4;
+  max-width: 100%;
+  font-size: 17px;
+}
+.PersonalizedServicesBox{
+  border-bottom: 5px solid #1D1D1B;
+}
+.PersonalizedServicesBox .ProductGrid::after{
+  content: none;
+}
+.PersonalizedServicesBox  .Product{
+  cursor: pointer;
+}
+.inHouse{
+
+}
+.inHouse .Header1Txt:after {
+  background-image: url(../public/reviewheading.png);
+  left: 25%;
+  max-width: 50%;
+}
+.inHouse .Header1Txt{
+  max-width: 100%;
+}
+.inHouse .Header2{
+color: #EB6131;
+font-weight: 600;
+font-size: 17px;
+}
+.inHouse .SliderItem1{
+cursor: pointer;
+}
+* {
+  scroll-behavior: smooth;
+}
+.inHouse .PromotionalBlock::after{
+content: none;
+}
+.cateringServices .Header2{
+font-weight: 500;
+font-size: 18px;
+}
+.FormFlex1{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-top: 40px;
+}
+.FormFlex1Item{
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0 15px;
+}
+.formBtn1{
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+.formBtn1:hover , .formBtn1.active{
+  background-color: #1D1D1B;
+  border: 2px solid #fff;
+  color: #EB6131;
+}
+.FormStepWrap{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.FillT1{
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #EB6131;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+
+.CatSeForm{
+  border: 4px solid #fff;
+}
+.CatSeForm .row .col-md-12{
+  margin-bottom: 0;
+}

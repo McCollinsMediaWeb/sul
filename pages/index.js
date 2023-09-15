@@ -7,6 +7,7 @@ import HomeCusience from "@/Components/Home-components/Home-Cusience/HomeCusienc
 import HomePromotions from "@/Components/Home-components/Home-Promotions/HomePromotions";
 import HomeReviews from "@/Components/Home-components/Home-Reviews/HomeReviews";
 import InstagramComponent from "@/Components/Home-components/Instagram/Instagram";
+
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 const index = () => {
