@@ -42,58 +42,82 @@ const CateringServices = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
-  const getActiveClass = (index, className) =>
+  const getActiveClass = (index, className) => {
     ToggleState === index ? className : "";
+  };
 
   return (
-   <div>
-     <div className="pd-common bg1 cateringServices" id="ourservices">
-      <div className="container">
-        <div
-          initial={{ x: -100 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, type: "spring" }}
-        >
-          <div className="Header1 text-center">
-            <div className="Header1Txt color-fff text-uppercase">
-              <span>Our services</span>
+    <div>
+      <div className="pd-common bg1 cateringServices" id="ourservices">
+        <div className="container">
+          <div
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, type: "spring" }}
+          >
+            <div className="Header1 text-center">
+              <div className="Header1Txt color-fff text-uppercase">
+                <span>Our services</span>
+              </div>
+            </div>
+            <div className="Header2 text-center">
+              Choose Your Catering Services Package Below And We’ll Get In Touch
             </div>
           </div>
-          <div className="Header2 text-center">
-            Choose Your Catering Services Package Below And We’ll Get In Touch
-          </div>
-        </div>
-        <div className="FormStepWrap">
-          <div className="FormStep1">
-            <div>
-              <div className="FormFlex1">
-                <div className="FormFlex1Item">
-                  <div className={`formBtn1 ${getActiveClass(1, "active")}`} onClick={() => toggleTab(1)}>Breakfast</div>
-                </div>
-                <div className="FormFlex1Item">
-                  <div className={`formBtn1 ${getActiveClass(2, "active")}`} onClick={() => toggleTab(2)}>Brunch</div>
-                </div>
-                <div className="FormFlex1Item">
-                  <div className={`formBtn1 ${getActiveClass(3, "active")}`} onClick={() => toggleTab(3)}>Lunch</div>
-                </div>
-                <div className="FormFlex1Item">
-                  <div className={`formBtn1 ${getActiveClass(4, "active")}`} onClick={() => toggleTab(4)}>Dinner</div>
-                </div>
-                <div className="FormFlex1Item">
-                  <div className={`formBtn1 ${getActiveClass(5, "active")}`} onClick={() => toggleTab(5)}>Custom</div>
+          <div className="FormStepWrap">
+            <div className="FormStep1">
+              <div>
+                <div className="FormFlex1">
+                  <div className="FormFlex1Item">
+                    <div
+                      className={`formBtn1 ${getActiveClass(1, "active")}`}
+                      onClick={() => toggleTab(1)}
+                    >
+                      Breakfast
+                    </div>
+                  </div>
+                  <div className="FormFlex1Item">
+                    <div
+                      className={`formBtn1 ${getActiveClass(2, "active")}`}
+                      onClick={() => toggleTab(2)}
+                    >
+                      Brunch
+                    </div>
+                  </div>
+                  <div className="FormFlex1Item">
+                    <div
+                      className={`formBtn1 ${getActiveClass(3, "active")}`}
+                      onClick={() => toggleTab(3)}
+                    >
+                      Lunch
+                    </div>
+                  </div>
+                  <div className="FormFlex1Item">
+                    <div
+                      className={`formBtn1 ${getActiveClass(4, "active")}`}
+                      onClick={() => toggleTab(4)}
+                    >
+                      Dinner
+                    </div>
+                  </div>
+                  <div className="FormFlex1Item">
+                    <div
+                      className={`formBtn1 ${getActiveClass(5, "active")}`}
+                      onClick={() => toggleTab(5)}
+                    >
+                      Custom
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {ToggleState === 1 && <CateringForm desc="test 1" />}
+      {ToggleState === 1 && <CateringForm desc="test 1" />}
     </div>
-    {getActiveClass(2) && (
-      <CateringForm/>
-    )}
-    
-   </div>
   );
 };
 

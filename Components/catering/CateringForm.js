@@ -9,7 +9,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
-const CateringForm = () => {
+const CateringForm = (props) => {
   const color = "#fff";
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -38,7 +38,6 @@ const CateringForm = () => {
     setAge(event.target.value);
   };
 
-  
   return (
     <div className="pd-common ContactRow2 CatSeForm">
       <div className="container">
@@ -128,7 +127,7 @@ const CateringForm = () => {
                 </div>
                 <div className="FillT1">Event Details</div>
                 <div className="row">
-                <div className="col-md-6">
+                  <div className="col-md-6">
                     <div className="form-control-1">
                       <DatePicker
                         fullWidth
@@ -221,7 +220,6 @@ const CateringForm = () => {
                       </FormControl>
                     </div>
                   </div>
-                  
                 </div>
                 <div className="text-center">
                   <button class="T7" type="submit">
