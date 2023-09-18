@@ -58,11 +58,12 @@ const CateringServices = () => {
           >
             <div className="Header1 text-center">
               <div className="Header1Txt color-fff text-uppercase">
-                <span>Our services</span>
+                <span>Our Party Catering Choices</span>
               </div>
             </div>
             <div className="Header2 text-center">
-              Choose Your Catering Services Package Below And We’ll Get In Touch
+              From corporate gatherings to private celebrations, savor the
+              finest in catering. Choose your package:
             </div>
           </div>
           <div className="FormStepWrap">
@@ -71,7 +72,9 @@ const CateringServices = () => {
                 <div className="FormFlex1">
                   <div className="FormFlex1Item">
                     <div
-                      className={`formBtn1 ${getActiveClass(1, "active")}`}
+                      className={`formBtn1 ${
+                        ToggleState === 1 ? "active" : ""
+                      }`}
                       onClick={() => toggleTab(1)}
                     >
                       Breakfast
@@ -79,7 +82,9 @@ const CateringServices = () => {
                   </div>
                   <div className="FormFlex1Item">
                     <div
-                      className={`formBtn1 ${getActiveClass(2, "active")}`}
+                      className={`formBtn1 ${
+                        ToggleState === 2 ? "active" : ""
+                      }`}
                       onClick={() => toggleTab(2)}
                     >
                       Brunch
@@ -87,7 +92,9 @@ const CateringServices = () => {
                   </div>
                   <div className="FormFlex1Item">
                     <div
-                      className={`formBtn1 ${getActiveClass(3, "active")}`}
+                      className={`formBtn1 ${
+                        ToggleState === 3 ? "active" : ""
+                      }`}
                       onClick={() => toggleTab(3)}
                     >
                       Lunch
@@ -95,7 +102,9 @@ const CateringServices = () => {
                   </div>
                   <div className="FormFlex1Item">
                     <div
-                      className={`formBtn1 ${getActiveClass(4, "active")}`}
+                      className={`formBtn1 ${
+                        ToggleState === 4 ? "active" : ""
+                      }`}
                       onClick={() => toggleTab(4)}
                     >
                       Dinner
@@ -103,7 +112,9 @@ const CateringServices = () => {
                   </div>
                   <div className="FormFlex1Item">
                     <div
-                      className={`formBtn1 ${getActiveClass(5, "active")}`}
+                      className={`formBtn1 ${
+                        ToggleState === 5 ? "active" : ""
+                      }`}
                       onClick={() => toggleTab(5)}
                     >
                       Custom
@@ -115,8 +126,11 @@ const CateringServices = () => {
           </div>
         </div>
       </div>
-      {ToggleState === 1 && <CateringForm desc="test 1" />}
-      {ToggleState === 2 && <CateringForm desc="test 2" />}
+      {ToggleState === 1 && <CateringForm Title="Breakfast" />}
+      {ToggleState === 2 && <CateringForm Title="Brunch" />}
+      {ToggleState === 3 && <CateringForm Title="Lunch" />}
+      {ToggleState === 4 && <CateringForm Title="Dinner" />}
+      {ToggleState === 5 && <CateringForm Title="Custom" />}
     </div>
   );
 };

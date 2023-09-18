@@ -2365,9 +2365,20 @@ text-align: center;
     padding-bottom: 20px !important;
   }
 }
+.cateringServices .Header1Txt{
+  max-width: 800px;
+}
+.cateringServices .Header1Txt::after {
+  left: 20%;
+  max-width: 60%;
+  bottom: 10px;
+}
 
 .ImageBanner1 .BannerContent {
-  max-width: 700px;
+  max-width: 800px;
+}
+.ImageBanner1 .Layer2{
+  background-color: rgba(29, 29, 27, .4);
 }
 .ImageBanner1 .BannerBtns a{
 min-width: 220px;
@@ -2420,6 +2431,7 @@ content: none;
 .cateringServices .Header2{
 font-weight: 500;
 font-size: 18px;
+margin: 15px auto;
 }
 .FormFlex1{
   display: flex;
@@ -2468,4 +2480,87 @@ font-size: 18px;
 }
 .CatSeForm .row .col-md-12{
   margin-bottom: 0;
+}
+::-moz-selection {
+  color: #1D1D1B;
+  background: #EB6131;
+}
+
+::selection {
+  color: #1D1D1B;
+  background: #EB6131;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ImageBanner1 .BannerBtns a {
+    min-width: 150px;
+  }
+  .cateringServices .Header2 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .FormFlex1{
+    margin: 0 -3px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .FormFlex1::-webkit-scrollbar {
+    display: none;
+  }
+  .formBtn1{
+    font-size: 15px;
+    padding: 18px 10px;
+    border-radius: 0;
+  }
+  .FormFlex1Item {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 3px;
+    margin-bottom: 5px;
+  }
+  .CatSeForm {
+    border: 0px solid #fff;
+    border-bottom: 2px solid #EB6131;
+  }
+  .FillT1 {
+    font-size: 15px;
+    margin: 15px 0px;
+  }
+  .inHouse .Header2 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .PersonalizedServicesBox .cusienBoxHdr2{
+    font-size: 15px;
+  }
+  .css-1w4btpj-MuiFormControl-root-MuiTextField-root label {
+    font-size: 13px !important;
+  }
+  .css-1w4btpj-MuiFormControl-root-MuiTextField-root input{
+    font-size: 14px !important;
+  }
+  .inHouse .Header1Txt {
+    line-height: 1.2;
+  }
+  .FormStep1{
+    margin: 0 -10px;
+  }
+  .cateringServices .Header1Txt::after ,
+  .inHouse .Header1Txt::after{
+    left: 0%;
+    max-width: 100%;
+    bottom: 0px;
+  }
+  .cateringServices .Header1Txt {
+    line-height: 1.1;
+  }
+  .Header1Txt {
+    font-size: 23px;
+  }
 }

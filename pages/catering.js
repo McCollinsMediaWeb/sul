@@ -11,7 +11,8 @@ const index = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <div>
-      <CateringBanner title="Corporate & Private Catering Services In Dubai" subtitle="From fragrant Daily Dish and hearty Breakfast to diverse Lunch, enchanting Dinner, and sizzling Shisha specialties – it's all about genuine flavors and cherished moments."/>
+      <CateringBanner title="Dubai's Premier Corporate and Private Party Catering Services
+" subtitle="Elevate your parties with our top-notch catering services in Dubai, perfect for corporate and private events. Delight your guests with exquisite flavors and impeccable service"/>
       <CateringServices/>
       <InHouse/>
         <PersonalizedServices/>

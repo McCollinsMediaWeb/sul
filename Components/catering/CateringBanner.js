@@ -106,15 +106,15 @@ const CateringBanner = (props) => {
                 <div>
                   <div className="BannerBtnWrp">
                     <div className="BannerBtns">
-                      <a
+                      {/* <a
                        onClick={() => setOpen(true)}
                         href="javascript:void(0);" className="BannerBtn1"
                       >
                         View Gallery
-                      </a>
+                      </a> */}
                       
                       <Link href="#ourservices" className="BannerBtn2" 	scroll={false}>
-                        View Services
+                      Enquire Now
                       </Link>
                       <Lightbox
                         open={open}
