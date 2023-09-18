@@ -66,9 +66,7 @@ const PersonalizedServices = () => {
                 </div>
                 <div className="col-md-8 color-fff">
                   <div className="cusienBoxHdr2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incidition ullamco laboris nisi ut aliquip
-                    ex ea commodo condor consectetur adipiscing.
+                  Experience the essence of personalized perfection with our catering service. From menu creation to execution, we tailor every detail to your unique tastes and preferences.
                   </div>
                 </div>
               </div>

@@ -60,8 +60,7 @@ const InHouse = () => {
               </div>
             </div>
             <div className="Header2 text-center color-fff">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            Experience culinary excellence wherever you desire with our catering service. Choose between our in-house venue for a curated ambiance or our on-site catering for the perfect event at your location.
             </div>
         </div>
         <div className="slider2">
