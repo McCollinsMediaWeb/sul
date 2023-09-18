@@ -2365,6 +2365,14 @@ text-align: center;
     padding-bottom: 20px !important;
   }
 }
+.cateringServices .Header1Txt{
+  max-width: 800px;
+}
+.cateringServices .Header1Txt::after {
+  left: 20%;
+  max-width: 60%;
+  bottom: 10px;
+}
 
 .ImageBanner1 .BannerContent {
   max-width: 800px;
@@ -2423,6 +2431,7 @@ content: none;
 .cateringServices .Header2{
 font-weight: 500;
 font-size: 18px;
+margin: 15px auto;
 }
 .FormFlex1{
   display: flex;
@@ -2541,5 +2550,17 @@ font-size: 18px;
   }
   .FormStep1{
     margin: 0 -10px;
+  }
+  .cateringServices .Header1Txt::after ,
+  .inHouse .Header1Txt::after{
+    left: 0%;
+    max-width: 100%;
+    bottom: 0px;
+  }
+  .cateringServices .Header1Txt {
+    line-height: 1.1;
+  }
+  .Header1Txt {
+    font-size: 23px;
   }
 }

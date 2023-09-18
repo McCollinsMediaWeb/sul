@@ -58,11 +58,11 @@ const CateringServices = () => {
           >
             <div className="Header1 text-center">
               <div className="Header1Txt color-fff text-uppercase">
-                <span>Our services</span>
+                <span>Our Party Catering Choices</span>
               </div>
             </div>
             <div className="Header2 text-center">
-              Choose Your Catering Services Package Below And We’ll Get In Touch
+            From corporate gatherings to private celebrations, savor the finest in catering. Choose your package:
             </div>
           </div>
           <div className="FormStepWrap">
