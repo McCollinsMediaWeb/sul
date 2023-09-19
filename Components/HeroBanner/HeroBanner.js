@@ -31,16 +31,12 @@ const HeroBanner = (props) => {
   };
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [open, setOpen] = useState(false);
-  const [booknowUrl, setBooknowUrl] = useState(
-    "/reservation"
-  );
+  const [booknowUrl, setBooknowUrl] = useState("/reservation");
   const [bookNowName, setbookNowName] = useState("Reserve Now");
   const router = useRouter();
   useEffect(() => {
     if (router.pathname === "/reservation") {
-      setBooknowUrl(
-        "/about"
-      );
+      setBooknowUrl("/about");
       setbookNowName("About Us");
       return;
     }
@@ -68,31 +64,31 @@ const HeroBanner = (props) => {
     <div className="HeroBannerWrp">
       {isDesktop && (
         <video
-        ref={videoRef}
-        src="/mainbanner.mp4"
-        width="100%"
-        height="700"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/hero1.jpg"
-        className="MainBannerVideo"
-      />
+          ref={videoRef}
+          src="/mainbanner.mp4"
+          width="100%"
+          height="700"
+          autoPlay
+          muted
+          loop
+          playsInline
+          // poster="/hero1.jpg"
+          className="MainBannerVideo"
+        />
       )}
       {!isDesktop && (
         <video
-        ref={videoRef}
-        src="/sul-mobile.mp4"
-        width="100%"
-        height="700"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/hero1mobile.jpg"
-        className="MainBannerVideo"
-      />
+          ref={videoRef}
+          src="/sul-mobile.mp4"
+          width="100%"
+          height="700"
+          autoPlay
+          muted
+          loop
+          playsInline
+          // poster="/hero1mobile.jpg"
+          className="MainBannerVideo"
+        />
         // <Image
         //   src="/hero1mobile.jpg"
         //   layout="responsive"
@@ -102,8 +98,7 @@ const HeroBanner = (props) => {
         //   className="MainBanner"
         // />
       )}
-      
-     
+
       <div className="Layer2">&nbsp;</div>
       <div className="Layer1">
         <div className="fullWidth">
@@ -115,19 +110,18 @@ const HeroBanner = (props) => {
             >
               <div className="BannerContent">
                 <div className="T1">{props.title} </div>
-                <div className="T2">
-                {props.subtitle}
-                </div>
+                <div className="T2">{props.subtitle}</div>
                 <div>
                   <div className="BannerBtnWrp">
                     <div className="BannerBtns">
                       <a
-                        href="https://www.talabat.com/uae/sul-me-restaurant-llc" target="_blank"
+                        href="https://www.talabat.com/uae/sul-me-restaurant-llc"
+                        target="_blank"
                         className="BannerBtn1"
                       >
                         Order Now
                       </a>
-                      
+
                       <Link href={booknowUrl} className="BannerBtn2">
                         {bookNowName}
                       </Link>
