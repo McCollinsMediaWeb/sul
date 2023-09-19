@@ -9,6 +9,9 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+import TagManager from "react-gtm-module";
+import ReactGA from "react-ga";
+
 import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
 
@@ -18,13 +21,22 @@ function Loading() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-MHGNP358" });
+  }, []);
+
+  useEffect(() => {
+    ReactGA.initialize("G-19J9CK82MF");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  useEffect(() => {
     const handleStart = (url) => url !== router.asPath && setLoading(true);
     const handleComplete = (url) =>
       url === router.asPath &&
       setTimeout(() => {
         setLoading(false);
       }, 500);
-      
+
     router.events.on("routeChangeStart", handleStart);
     router.events.on("routeChangeComplete", handleComplete);
     router.events.on("routeChangeError", handleComplete);
@@ -71,8 +83,8 @@ export default function App({ Component, pageProps }) {
     <div>
       <Loading />
       <Head>
-      <meta name="color-scheme" content="light only"/>
-      <meta name="color-scheme" content="light"/>
+        <meta name="color-scheme" content="light only" />
+        <meta name="color-scheme" content="light" />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -154,7 +166,10 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+        />
       </Head>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Header />
