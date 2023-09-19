@@ -72,7 +72,7 @@ const HeroBanner = (props) => {
           muted
           loop
           playsInline
-          // poster="/hero1.jpg"
+          poster="/sc-banner.png"
           className="MainBannerVideo"
         />
       )}
@@ -86,7 +86,7 @@ const HeroBanner = (props) => {
           muted
           loop
           playsInline
-          // poster="/hero1mobile.jpg"
+          poster="/sc-banner-mob.png"
           className="MainBannerVideo"
         />
         // <Image
