@@ -8,6 +8,7 @@ import Select from "@mui/material/Select";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { useRouter } from "next/router";
 const theme = createTheme({
   palette: {
     primary: { main: "#EB6131" },
@@ -23,6 +24,7 @@ const ReservTable1 = () => {
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [inputSize, SetInputSize] = useState("medium");
+  const router = useRouter();
   useEffect(() => {
     if (isDesktop) {
       SetInputSize("medium");
@@ -59,6 +61,7 @@ const ReservTable1 = () => {
       console.log("Form submitted successfully");
       alert("form submitted successfully");
       event.target.reset();
+      router.push("/thankyou-reservation");
       // Reset the form or perform other actions
     } else {
       // Handle errors

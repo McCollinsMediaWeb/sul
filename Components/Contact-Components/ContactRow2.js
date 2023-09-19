@@ -9,11 +9,13 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { useRouter } from "next/router";
 const ContactRow2 = () => {
   const color = "#fff";
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [inputSize, SetInputSize] = useState("medium");
+  const router = useRouter();
   useEffect(() => {
     if (isDesktop) {
       SetInputSize("medium");
@@ -57,6 +59,7 @@ const ContactRow2 = () => {
       // Successful submission
       console.log("Form submitted successfully");
       alert("form submitted successfully");
+      router.push("/thankyou");
       // Reset the form or perform other actions
     } else {
       // Handle errors
