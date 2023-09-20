@@ -7,9 +7,8 @@ const about = () => {
       <div className="ThankyouBoxWrap">
         <div className="ThankyouBox">
           <div>
-            
-            <div className="T1">Thank you for reaching out ! </div>
-            <div className="T2">We will connect with you within 24 Hours</div>
+            <div className="T1">Thank you for booking!</div>
+            <div className="T2">We will call you shortly for confirmation</div>
             <div class="BannerBtnWrp">
               <div class="BannerBtns">
                 <a class="BannerBtn2" href="/">
