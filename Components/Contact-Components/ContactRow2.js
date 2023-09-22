@@ -58,7 +58,6 @@ const ContactRow2 = () => {
     if (response.ok) {
       // Successful submission
       console.log("Form submitted successfully");
-      alert("form submitted successfully");
       router.push("/thankyou");
       // Reset the form or perform other actions
     } else {

@@ -59,7 +59,6 @@ const ReservTable1 = () => {
     if (response.ok) {
       // Successful submission
       console.log("Form submitted successfully");
-      alert("form submitted successfully");
       event.target.reset();
       router.push("/thankyou-reservation");
       // Reset the form or perform other actions
