@@ -15,6 +15,7 @@ const ContactRow2 = () => {
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [inputSize, SetInputSize] = useState("medium");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
   useEffect(() => {
     if (isDesktop) {
@@ -58,12 +59,24 @@ const ContactRow2 = () => {
     if (response.ok) {
       // Successful submission
       console.log("Form submitted successfully");
-      router.push("/thankyou");
+
+      openModal();
       // Reset the form or perform other actions
     } else {
       // Handle errors
       console.error("Form submission failed");
     }
+  };
+
+  // Function to open the modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    router.push("/thankyou");
   };
 
   return (
@@ -93,6 +106,7 @@ const ContactRow2 = () => {
                         label: { color },
                         borderColor: { color },
                       }}
+                      required
                     />
                   </div>
                   <div className="col-md-6">
@@ -101,6 +115,7 @@ const ContactRow2 = () => {
                       fullWidth
                       name="Phone"
                       size={inputSize}
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -115,6 +130,7 @@ const ContactRow2 = () => {
                       fullWidth
                       name="Email"
                       size={inputSize}
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -130,6 +146,7 @@ const ContactRow2 = () => {
                       minRows={3}
                       fullWidth
                       name="Message"
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -149,6 +166,19 @@ const ContactRow2 = () => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <p>Thank you for submission!</p>
+            <button className="btnCntSuccess" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

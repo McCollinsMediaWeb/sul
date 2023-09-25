@@ -9,6 +9,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useRouter } from "next/router";
+
 const theme = createTheme({
   palette: {
     primary: { main: "#EB6131" },
@@ -24,6 +25,8 @@ const ReservTable1 = () => {
   const [age, setAge] = React.useState("");
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [inputSize, SetInputSize] = useState("medium");
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
   useEffect(() => {
     if (isDesktop) {
@@ -60,12 +63,23 @@ const ReservTable1 = () => {
       // Successful submission
       console.log("Form submitted successfully");
       event.target.reset();
-      router.push("/thankyou-reservation");
+      openModal();
       // Reset the form or perform other actions
     } else {
       // Handle errors
       console.error("Form submission failed");
     }
+  };
+
+  // Function to open the modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    router.push("/thankyou-reservation");
   };
   return (
     <div className="pd-common ContactRow2">
@@ -88,6 +102,7 @@ const ReservTable1 = () => {
                       fullWidth
                       size={inputSize}
                       name="Name"
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -102,6 +117,7 @@ const ReservTable1 = () => {
                       fullWidth
                       size={inputSize}
                       name="Phone"
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -116,6 +132,7 @@ const ReservTable1 = () => {
                       fullWidth
                       size={inputSize}
                       name="Email"
+                      required
                       sx={{
                         svg: { color },
                         input: { color },
@@ -135,6 +152,7 @@ const ReservTable1 = () => {
                             label: { color },
                             borderColor: { color },
                           }}
+                          required
                         >
                           Number of Guest
                         </InputLabel>
@@ -151,6 +169,7 @@ const ReservTable1 = () => {
                             label: { color },
                             borderColor: { color },
                           }}
+                          required
                         >
                           <MenuItem value={1}>1</MenuItem>
                           <MenuItem value={2}>2</MenuItem>
@@ -214,6 +233,19 @@ const ReservTable1 = () => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <p>Thank you for submission!</p>
+            <button className="btnResSuccess" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
