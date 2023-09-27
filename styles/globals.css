@@ -2924,7 +2924,8 @@ overflow: hidden;
     height: 130px;
   }
   .MenuName{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.1;
   }
   .MenuItemLiasWrap {
     margin-top: 0;
