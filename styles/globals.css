@@ -2610,3 +2610,368 @@ margin: 15px auto;
     font-size: 20px;
     cursor: pointer;
 }
+
+.MenuHeader{
+  background-image: url(../public/catering.jpg);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.MenuHeader::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18,18,18,.5);
+  z-index: 1;
+  padding-top: unset;
+  pointer-events: none;
+}
+.MenuHeaderT{
+position: relative;
+z-index: 2;
+font-size: 55px;
+text-transform: uppercase;
+font-weight: 600;
+margin-top: 30px;
+}
+.MenuHeader2{
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.MenuItemGrid{
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  position: relative;
+  background-color: #242424;
+  border-radius: 10px;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.MenuItemGrid::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18,18,18,.3);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+
+.MenuName{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 2;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.MenuItem{
+  padding: 0 5px;
+}
+.MenuItemGrid.m1{
+  background-image: url(../public/menuimages/thumb/starter3.jpg);
+}
+.MenuItemGrid.m2{
+  background-image: url(../public/menuimages/thumb/salads.jpg);
+}
+.MenuItemGrid.m3{
+  background-image: url(../public/menuimages/thumb/shawarma.jpg);
+}
+.MenuItemGrid.m4{
+  background-image: url(../public/menuimages/thumb/main.jpg);
+}
+.MenuItemGrid.m5{
+  background-image: url(../public/menuimages/thumb/fromthesea.jpg);
+}
+.MenuItemGrid.m6{
+  background-image: url(../public/menuimages/thumb/pizza.jpg);
+}
+.MenuItemGrid.m7{
+  background-image: url(../public/menuimages/thumb/georgea.jpg);
+}
+.MenuItemGrid.m8{
+  background-image: url(../public/menuimages/thumb/pennepasta.jpg);
+}
+.MenuItemGrid.m9{
+  background-image: url(../public/menuimages/thumb/desserts.jpg);
+}
+.MenuItem.active .MenuItemGrid{
+  border-bottom: 4px solid #EB6131;
+}
+.MenuItem:hover .MenuItemGrid{
+  border-bottom: 4px solid #EB6131;
+}
+.MenuItem:hover .MenuItemGrid::after,
+.MenuItem.active .MenuItemGrid::after{
+  background-color: rgba(235, 97, 49,.5);
+}
+
+.menuSlider .slick-next:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+  background-image: url(../public/icons/btn-next.png);
+  display: inline-block;
+  opacity: 1;
+}
+
+.menuSlider .slick-prev:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+  background-image: url(../public/icons/btn-prev.png);
+  display: inline-block;
+  opacity: 1;
+}
+
+.menuSlider .slick-prev,
+.menuSlider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  display: none !important;
+}
+.menuSlider:hover .slick-prev,
+.menuSlider:hover  .slick-next {
+  display: block !important;
+}
+.MenuItemLiasWrap{
+  margin-top: 50px;
+}
+.PrItem{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.PrItemLeft{
+  flex: 0 0 115px;
+  max-width: 115px;
+  border-radius: 10px;
+}
+.PrItemLeft img{
+  border-radius: 10px;
+}
+.PrItemMiddle{
+  flex: auto;
+  max-width: auto;
+  padding: 15px;
+}
+.PrItemRight{
+  flex: 0 0 165px;
+  max-width: 165px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.PrItemName{
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.PrItemDesc{
+  margin-bottom: 8px;
+}
+.PrItemPrice{
+  color: #EB6131;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ReadMrBtn{
+  color: #1D1D1B;
+  padding-right: 30px;
+  position: relative;
+  font-weight: 500;
+}
+.ReadMrBtn::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url(../public/arrow1.png);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.MenuItemLiasWrap .col-md-6{
+  margin-top: 30px;
+}
+.MenuPopupWrap{
+  background-color: rgba(235, 97, 49,.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  text-align: center;
+}
+.MenuPopup{
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.MenuPopupContent{
+  text-align: left;
+  padding: 20px;
+}
+.MenuPopupT1{
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.MenuPopupT2{
+  margin-bottom: 8px;
+}
+.MenuPopupT3{
+  color: #EB6131;
+  font-size: 16px;
+  font-weight: 500;
+}
+.MenuPopupFooter{
+  text-align: left;
+  padding: 0 15px;
+}
+.CloseModal{
+  width: 30px;
+  height: 30px;
+  background-image: url(../public/close.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.MenuPopupFooter .BannerBtns a.BannerBtn1{
+background-color: #1D1D1B;
+}
+
+.full-width{
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+
+  .menuSlider:hover .slick-prev, .menuSlider:hover .slick-next {
+    display: none !important;
+  }
+  .MenuHeader{
+    height: 250px;
+  }
+  .MenuHeaderT {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .MenuHeader2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .menuSlider{
+    margin: 0 -15px;
+  }
+  .MenuItemGrid{
+    height: 130px;
+  }
+  .MenuName{
+    font-size: 16px;
+  }
+  .MenuItemLiasWrap {
+    margin-top: 0;
+  }
+  .MenuItemLiasWrap .col-md-6 {
+    margin-top: 15px;
+  }
+  .PrItemLeft {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .PrItemMiddle{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+  .PrItemRight{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+    justify-content: end;
+  }
+  .PrItemName {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  }
+  .PrItemDesc {
+    margin-bottom: 3px;
+    font-size: 12px;
+    display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  }
+  .PrItemPrice{
+    font-size: 14px;
+  }
+  .ReadMrBtn {
+    padding-right: 0;
+    font-size: 0;
+  }
+  .ReadMrBtn::after {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+  .MenuPopup{
+    width: 100%;
+  }
+  .MenuPopupFooter .BannerBtns{
+    justify-content: start;
+    }
+    .MenuPopupFooter .BannerBtns a{
+      min-width: 140px;
+      padding: 7px 15px;
+    }
+}

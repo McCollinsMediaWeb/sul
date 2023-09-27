@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import TagManager from "react-gtm-module";
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 
 import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
@@ -24,10 +24,10 @@ function Loading() {
     TagManager.initialize({ gtmId: "GTM-MHGNP358" });
   }, []);
 
-  useEffect(() => {
-    ReactGA.initialize("G-19J9CK82MF");
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.initialize("G-19J9CK82MF");
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
 
   useEffect(() => {
     const handleStart = (url) => url !== router.asPath && setLoading(true);
