@@ -84,8 +84,8 @@ const about = () => {
                         <img
                           src={dish.image}
                           width={"110"}
-                          height={"110%"}
-                          style={{ height: "inherit", objectFit: "cover" }}
+                          height={"110"}
+                          style={{ height: "110px", objectFit: "cover" }}
                         />
                       </div>
                     </div>
