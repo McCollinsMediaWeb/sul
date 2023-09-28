@@ -92,7 +92,7 @@ const about = () => {
                     <div className="PrItemMiddle">
                       <div className="PrItemName">{dish.name}</div>
                       <div className="PrItemDesc">{dish.description}</div>
-                      <div className="PrItemPrice">{dish.price}</div>
+                      <div className="PrItemPrice">AED {dish.price}</div>
                     </div>
                     <div className="PrItemRight">
                       <div className="ReadMrBtn">Read More</div>
