@@ -80,7 +80,10 @@ const about = () => {
                 >
                   <div className="PrItem">
                     <div className="PrItemLeft">
-                      <div className="PrItemThumb" style={{ height: "100%" }}>
+                      <div
+                        className="PrItemThumb"
+                        style={{ height: "100%", overflow: "hidden" }}
+                      >
                         <img
                           src={dish.image}
                           width={"110"}
