@@ -111,7 +111,7 @@ const about = () => {
                       &nbsp;
                     </div>
                     <Image
-                      src="/menuimages/original/a.jpg"
+                      src={categoryData[activeItem].items[activeDish].image}
                       layout="responsive"
                       width={"1000"}
                       height={"665"}
