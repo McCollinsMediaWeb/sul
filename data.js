@@ -16,7 +16,7 @@ const categoryData = [
       },
       {
         name: "Risotto shrimps",
-        price: "53 dirham",
+        price: "53",
         description: "Risotto shrimps with red curry paste",
         image: "/catMenu/081A1753.jpg",
       },
