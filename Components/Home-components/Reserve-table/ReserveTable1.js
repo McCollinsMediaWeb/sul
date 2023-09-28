@@ -51,7 +51,7 @@ const ReservTable1 = () => {
 
     // Send the data to the Google Apps Script
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbxFtERQUcAVHy4dJ87MeDfFiseDsOHJ_Ma5Wg0ruGSTP8M-WLPOp0LzKTNaaU5KpPnMqw/exec",
+      "https://script.google.com/macros/s/AKfycbz2afS6TOaUhMyPyzyaj_8EilSOZKnDxRYtuZG5MAWNCtponc7B591ZlzjTGiOsataqtg/exec",
       {
         method: "POST",
         body: formData,
