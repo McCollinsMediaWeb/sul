@@ -35,7 +35,7 @@ const categoryData = [
         name: "Fattoush salad",
         price: "33",
         description: "mixed vegetables with fried bread",
-        image: "/catMenu/081A2983.jpg",
+        image: "/catMenu/fatoush-salad.jpg",
       },
       {
         name: "Tabbouleh salad",
